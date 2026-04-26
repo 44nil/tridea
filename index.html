@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Atay — Fikri Ürüne Dönüştürüyoruz</title>
-<meta name="description" content="Atay, karmaşık problemleri yazılım ile çözen genç ve dinamik bir teknoloji şirketidir. Web, mobil, yapay zeka ve SaaS çözümleri." />
+<title>Atay Yazılım Stüdyosu — Fikir Alıyoruz, Ürüne Dönüştürüyoruz</title>
+<meta name="description" content="Atay, web, mobil ve yapay zeka alanında kurumsal yazılım üreten bir EduXperts şirketi. EduQR ve TwinTarım bizim. Müşteri projelerini de aynı titizlikle yapıyoruz." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -24,20 +24,25 @@
 <nav id="nav">
   <a href="#" class="logo">ATAY<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="#urunler">Ürünler</a></li>
-    <li><a href="#hizmetler">Hizmetler</a></li>
-    <li><a href="#nasil">Süreç</a></li>
-    <li><a href="#iletisim">İletişim</a></li>
+    <li><a href="#hizmetler" data-i18n="nav-services">Hizmetler</a></li>
+    <li><a href="#urunler" data-i18n="nav-products">Ürünler</a></li>
+    <li><a href="#nasil" data-i18n="nav-process">Süreç</a></li>
+    <li><a href="#iletisim" data-i18n="nav-contact">İletişim</a></li>
   </ul>
-  <a href="#iletisim" class="nav-btn">Teklif Al →</a>
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="tr" onclick="setLanguage('tr')">TR</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+  </div>
+  <a href="#iletisim" class="nav-btn" data-i18n="nav-cta">Teklif Al →</a>
   <button class="hamburger" id="hamburger" aria-label="Menü">
     <span></span><span></span>
   </button>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#urunler" class="mob-link">Ürünler</a>
   <a href="#hizmetler" class="mob-link">Hizmetler</a>
+  <a href="#urunler" class="mob-link">Ürünler</a>
   <a href="#nasil" class="mob-link">Süreç</a>
   <a href="#iletisim" class="mob-link">İletişim</a>
   <a href="#iletisim" class="mob-cta">Teklif Al →</a>
@@ -51,22 +56,22 @@
   </div>
 
   <div class="hero-content">
-    <div class="hero-badge reveal">
-      <span class="badge-dot"></span>
-      Konya, Türkiye · 3 Kişilik Ekip · 2 Aktif Ürün
+    <div class="hero-parent-badge reveal" data-i18n="hero-badge">
+      An <a href="https://eduxperts.com.tr" target="_blank" class="parent-link">EduXperts</a> Company
     </div>
-    <h1 class="hero-title reveal">
-      Fikri ürüne,<br>
-      <em>problemi</em><br>
-      çözüme.
+
+    <h1 class="hero-title reveal" data-i18n="hero-title">
+      Fikir alıyoruz,<br>
+      <em>ürüne</em><br>
+      dönüştürüyoruz.
     </h1>
-    <p class="hero-sub reveal">
-      Yazılım geliştiriyoruz. Ama önce düşünüyoruz.<br>
-      Kendi ürünlerimizi de biz kullanıyoruz — bu fark yaratıyor.
+    <p class="hero-sub reveal" data-i18n="hero-sub">
+      EduQR ve TwinTarım bizim.<br>
+      Müşteri projelerini de aynı titizlikle yapıyoruz.
     </p>
     <div class="hero-actions reveal">
-      <a href="#iletisim" class="btn-dark">Projenizi Konuşalım</a>
-      <a href="#urunler" class="btn-ghost">Ürünlerimizi Gör ↓</a>
+      <a href="#iletisim" class="btn-dark" data-i18n="hero-btn-primary">Projenizi Konuşalım</a>
+      <a href="#urunler" class="btn-ghost" data-i18n="hero-btn-secondary">Ürünlerimizi Gör ↓</a>
     </div>
   </div>
 
@@ -79,33 +84,20 @@
         <span class="code-file">atay/solution.ts</span>
       </div>
       <div class="code-body">
-        <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">problem</span> <span class="c-white">=</span> <span class="c-green">await</span> <span class="c-white">understand(client);</span></div>
+        <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">problem</span> <span class="c-white">=</span> <span class="c-accent">await</span> <span class="c-white">understand(client);</span></div>
         <div class="code-line"></div>
-        <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">solution</span> <span class="c-white">=</span> <span class="c-green">await</span> <span class="c-white">build({</span></div>
-        <div class="code-line indent"><span class="c-orange">tech</span><span class="c-white">:</span> <span class="c-green">'modern'</span><span class="c-white">,</span></div>
-        <div class="code-line indent"><span class="c-orange">quality</span><span class="c-white">:</span> <span class="c-green">'production'</span><span class="c-white">,</span></div>
+        <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">solution</span> <span class="c-white">=</span> <span class="c-accent">await</span> <span class="c-white">build({</span></div>
+        <div class="code-line indent"><span class="c-orange">tech</span><span class="c-white">:</span> <span class="c-accent">'modern'</span><span class="c-white">,</span></div>
+        <div class="code-line indent"><span class="c-orange">quality</span><span class="c-white">:</span> <span class="c-accent">'production'</span><span class="c-white">,</span></div>
         <div class="code-line indent"><span class="c-orange">ai</span><span class="c-white">:</span> <span class="c-purple">true</span><span class="c-white">,</span></div>
         <div class="code-line indent"><span class="c-orange">scalable</span><span class="c-white">:</span> <span class="c-purple">true</span></div>
         <div class="code-line"><span class="c-white">});</span></div>
         <div class="code-line"></div>
-        <div class="code-line"><span class="c-green">return</span> <span class="c-white">deploy(solution);</span></div>
+        <div class="code-line"><span class="c-accent">return</span> <span class="c-white">deploy(solution);</span></div>
         <div class="code-line typed-line"><span class="c-gray">// ✓ Delivered on time</span><span class="cursor-blink">|</span></div>
       </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat-pill">
-        <strong>2</strong>
-        <span>Aktif Ürün</span>
-      </div>
-      <div class="stat-pill">
-        <strong>100%</strong>
-        <span>Mevzuat Uyumlu</span>
-      </div>
-      <div class="stat-pill">
-        <strong>AI</strong>
-        <span>Destekli</span>
-      </div>
-    </div>
+
   </div>
 </section>
 
@@ -133,201 +125,377 @@
   </div>
 </div>
 
-<!-- ÜRÜNLER -->
-<section class="products" id="urunler">
-  <div class="section-header reveal">
-    <div class="section-label">Önemli Projelerimiz</div>
-    <h2>Fikirleri bir sonraki<br><span>adıma taşıyan ürünler.</span></h2>
-  </div>
+<section id="hizmetler" class="hizmetler-sticky">
+  <div class="scroll-container">
+    
+    <div class="sticky-side">
+      <div class="sticky-content active" id="content-studio">
+        <span class="tag" data-i18n="svc-tag-1">01. Studio</span>
+        <h2 class="hybrid-title" data-i18n="svc-title-1">Sizin için<br><em>ne üretebiliriz?</em></h2>
+        <p class="hybrid-text" data-i18n="svc-desc-1">Web, mobil ya da yapay zeka — ihtiyaca göre doğru teknolojiyi seçiyor, başından sonuna kadar birlikte ilerliyoruz.</p>
+      </div>
+      
+      <div class="sticky-content" id="content-lab">
+        <span class="tag" data-i18n="svc-tag-2">02. Mühendislik</span>
+        <h2 class="hybrid-title" data-i18n="svc-title-2">İşin içinde<br><em>olmak.</em></h2>
+        <p class="hybrid-text" data-i18n="svc-desc-2">Kendi ürünlerimizi de sahaya sürdüğümüz için her projeye uzun vadeli bakıyoruz.</p>
+      </div>
+    </div>
 
-  <!-- EduQR -->
-  <div class="product-card reveal">
-    <div class="product-card-info">
-      <div class="product-number">01</div>
-      <div class="product-meta">
-        <span class="product-tag active">● Aktif SaaS/span>
-        <span class="product-tag">Restoran & Kafe</span>
+    <div class="scrolling-side">
+      <div class="scroll-item" data-sticky="content-studio">
+        <div class="strict-card">
+          <div class="sc-top">
+            <span class="sc-arrow">↗</span>
+            <span class="sc-num">01</span>
+          </div>
+          <div class="sc-middle">
+            <div class="tech-tags">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>TailwindCSS</span>
+              <span>Vite</span>
+            </div>
+          </div>
+          <div class="sc-bottom">
+            <div class="sc-meta">WEB GELİŞTİRME · NEXT.JS & REACT</div>
+            <h3 class="sc-title">KURUMSAL WEB UYGULAMALARI</h3>
+            <p class="sc-desc">Sıfırdan ya da mevcut sisteminizi modernize ederek. Next.js, React ve TypeScript ile üretim kalitesinde.</p>
+          </div>
+        </div>
       </div>
-      <h3>EduQR</h3>
-      <p>T.C. Ticaret Bakanlığı uyumlu dijital menü sistemi. QR kod ile menünüzü anında oluşturun, fiyatlarınızı gerçek zamanlı güncelleyin. Mevzuata %100 uyumlu altyapı ile hem hız kazanın hem de işletmenizi koruyun.</p>
-      <div class="product-features">
-        <div class="pf-item">✓ Bakanlık mevzuatına uyumlu</div>
-        <div class="pf-item">✓ Dakikalar içinde kurulum</div>
-        <div class="pf-item">✓ Gerçek zamanlı fiyat güncelleme</div>
-        <div class="pf-item">✓ QR kod yönetimi</div>
+      
+      <div class="scroll-item" data-sticky="content-studio">
+        <div class="strict-card">
+          <div class="sc-top">
+            <span class="sc-arrow">↗</span>
+            <span class="sc-num">02</span>
+          </div>
+          <div class="sc-middle">
+            <div class="tech-tags">
+              <span>Flutter</span>
+              <span>React Native</span>
+              <span>Swift</span>
+              <span>Kotlin</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+          <div class="sc-bottom">
+            <div class="sc-meta">MOBİL UYGULAMA · IOS & ANDROID</div>
+            <h3 class="sc-title">MOBİL UYGULAMALAR</h3>
+            <p class="sc-desc">iOS ve Android için akıcı, hafif uygulamalar. Kullanıcı deneyimi her kararın merkezinde.</p>
+          </div>
+        </div>
       </div>
-      <a href="https://eduqr.tr" target="_blank" class="product-link">Siteye Git ↗</a>
+      
+      <div class="scroll-item" data-sticky="content-studio">
+        <div class="strict-card">
+          <div class="sc-top">
+            <span class="sc-arrow">↗</span>
+            <span class="sc-num">03</span>
+          </div>
+          <div class="sc-middle">
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>OpenAI API</span>
+              <span>LangChain</span>
+              <span>AWS</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="sc-bottom">
+            <div class="sc-meta">AI & BACKEND · PYTHON & AWS</div>
+            <h3 class="sc-title">YAPAY ZEKA & ALTYAPI</h3>
+            <p class="sc-desc">İş süreçlerinizi otomatikleştirmek ya da ürününüze AI özelliği eklemek için doğru model, doğru entegrasyon.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-item" data-sticky="content-studio">
+        <div class="strict-card">
+          <div class="sc-top">
+            <span class="sc-arrow">↗</span>
+            <span class="sc-num">04</span>
+          </div>
+          <div class="sc-middle">
+            <div class="tech-tags">
+              <span>Stripe</span>
+              <span>Multi-tenant Architecture</span>
+              <span>Microservices</span>
+              <span>Docker</span>
+              <span>Redis</span>
+            </div>
+          </div>
+          <div class="sc-bottom">
+            <div class="sc-meta">SAAS & ERP · STRIPE & MULTI-TENANT</div>
+            <h3 class="sc-title">KURUMSAL YAZILIM & SAAS</h3>
+            <p class="sc-desc">Abonelik sistemi, çok kiracılı mimari, özel ERP. Büyüdükçe sizinle büyüyen platformlar.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-item" data-sticky="content-lab">
+         <div class="engineering-preview-box">
+            <div class="strict-card">
+              <div class="sc-top">
+                <span class="sc-arrow">⚙</span>
+                <span class="sc-num">05</span>
+              </div>
+              <div class="sc-middle">
+                <ul class="eng-features-grid">
+                  <li><span class="f-icon">✓</span> Ölçeklenebilir Altyapı</li>
+                  <li><span class="f-icon">✓</span> Sıfır Teknik Borç</li>
+                  <li><span class="f-icon">✓</span> Temiz ve Sürdürülebilir Kod</li>
+                  <li><span class="f-icon">✓</span> Güvenlik Odaklı Mimari</li>
+                  <li><span class="f-icon">✓</span> CI/CD Otomasyonu</li>
+                  <li><span class="f-icon">✓</span> Kapsamlı Test Kapsamı</li>
+                </ul>
+              </div>
+              <div class="sc-bottom">
+                <div class="sc-meta">ATAY · MÜHENDİSLİK KÜLTÜRÜ</div>
+                <h3 class="sc-title">MÜHENDİSLİK KÜLTÜRÜ</h3>
+                <p class="sc-desc">Temiz kod, sağlam mimari, sürdürülebilir sistemler. Teslim edip geçmiyoruz.</p>
+              </div>
+            </div>
+         </div>
+      </div>
     </div>
-    <div class="product-card-visual eduqr-visual">
-      <img src="assets/images/eduqr-mockup.png" alt="EduQR" class="mockup-img phone-mockup">
-    </div>
-  </div>
 
-  <!-- TwinTarım -->
-  <div class="product-card reverse reveal">
-    <div class="product-card-info">
-      <div class="product-number">02</div>
-      <div class="product-meta">
-        <span class="product-tag dev">⚙ Geliştirme Aşamasında</span>
-        <span class="product-tag">Tarım Teknolojisi</span>
+  </div>
+</section>
+
+<!-- ÖNEMLİ PROJELERİMİZ (PORTFOLIO GRID) -->
+<section class="portfolio-strict" id="urunler" style="padding-top: 40px;">
+  <div class="portfolio-inner">
+    <div class="p-header reveal">
+      <div class="p-label" data-i18n="products-label">KENDİ ÜRETTİKLERİMİZ</div>
+      <div class="p-title-row">
+        <h2 data-i18n="products-title">ÜRÜNLER</h2>
       </div>
-      <h3>TwinTarım</h3>
-      <p>Bürokrasisiz, uzay ve yapay zeka destekli tarım karar mekanizması. NASA SRTM, ESA Sentinel, ISRIC SoilGrids verilerini birleştirerek tarım arazileri için gerçek zamanlı analiz ve akıllı öneri sistemi.</p>
-      <div class="product-features">
-        <div class="pf-item">✓ NASA & ESA uydu entegrasyonu</div>
-        <div class="pf-item">✓ Yapay zeka agronomi reçetesi</div>
-        <div class="pf-item">✓ Tapu Kadastro API entegrasyonu</div>
-        <div class="pf-item">✓ İklim projeksiyonu (2030)</div>
-      </div>
-      <a href="https://www.twintarim.space" target="_blank" class="product-link">Demo Gör ↗</a>
+      <p style="font-size:16px; color:var(--gray-500); font-weight:300; margin-top:16px;" data-i18n="products-sub">Kendi geliştirdiğimiz, piyasada çalışan iki ürün.</p>
     </div>
-    <div class="product-card-visual twin-visual">
-      <img src="assets/images/twintarim-mockup.png" alt="TwinTarım" class="mockup-img desktop-mockup">
+    
+    <div class="portfolio-grid reveal">
+      <!-- EduQR -->
+      <a href="https://eduqr.tr" target="_blank" class="strict-card p-card">
+        <div class="sc-top">
+          <span class="sc-arrow">↗</span>
+          <span class="sc-num">01</span>
+        </div>
+        
+        <div class="p-card-visual">
+          <img src="assets/images/eduqr-mockup.png" alt="EduQR" class="mockup-img phone-mockup">
+        </div>
+
+        <div class="sc-bottom">
+          <div class="sc-meta">SAAS PLATFORM · DİJİTAL MENÜ</div>
+          <h3 class="sc-title">EDUQR</h3>
+          <p class="sc-desc">Dijital menü sistemi. T.C. Ticaret Bakanlığı mevzuatına uygun, QR kod ile güncellenir.</p>
+        </div>
+      </a>
+
+      <!-- TwinTarım -->
+      <a href="https://www.twintarim.space" target="_blank" class="strict-card p-card">
+        <div class="sc-top">
+          <span class="sc-arrow">↗</span>
+          <span class="sc-num">02</span>
+        </div>
+        
+        <div class="p-card-visual">
+          <img src="assets/images/twintarim-mockup.png" alt="TwinTarım" class="mockup-img desktop-mockup">
+        </div>
+
+        <div class="sc-bottom">
+          <div class="sc-meta">TARIM TEKNOLOJİSİ · NASA & ESA</div>
+          <h3 class="sc-title">TWİNTARIM</h3>
+          <p class="sc-desc">Uydu verisiyle tarım karar desteği. NASA ve ESA verileriyle gerçek zamanlı arazi analizi.</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- HİZMETLER -->
-<section class="services" id="hizmetler">
-  <div class="services-inner">
-    <div class="section-header reveal">
-      <div class="section-label">Hizmetlerimiz</div>
-      <h2>Başkalarına ne<br><span>yapabiliriz?</span></h2>
+
+<!-- SIKÇA SORULANLAR (BOT) -->
+<section class="atay-bot" id="sorular">
+  <div class="bot-inner">
+    <div class="bot-header reveal">
+      <div class="section-label">HIZLI YANITLAR</div>
+      <h2>Merak ettikleriniz<br>için <span class="c-accent">AtayBot</span>.</h2>
     </div>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">⬡</div>
-        <h3>Web Geliştirme</h3>
-        <p>Hızlı, SEO uyumlu, modern web siteleri ve kurumsal web uygulamaları. React, Next.js ile ölçeklenebilir çözümler.</p>
-        <div class="service-stack">React · Next.js · TypeScript</div>
+    
+    <div class="bot-window reveal">
+      <div class="bot-topbar">
+        <div class="bot-dots"><span></span><span></span><span></span></div>
+        <div class="bot-title">atay-terminal ~ ./soru-cevap.sh</div>
+        <div class="bot-status"><span class="status-dot"></span> Çevrimiçi</div>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◈</div>
-        <h3>Mobil Uygulama</h3>
-        <p>iOS ve Android için yüksek performanslı, kullanıcı odaklı mobil uygulamalar. Native ya da cross-platform.</p>
-        <div class="service-stack">React Native · Flutter · Swift</div>
+      
+      <div class="bot-chat-area" id="chatArea">
+        <div class="chat-msg bot-msg">
+          <div class="msg-avatar">A</div>
+          <div class="msg-bubble">Selam! Proje süreçlerimiz, fiyatlandırma veya teknoloji yığınımız hakkında ne öğrenmek istersin? Aşağıdaki soruları seçebilir veya kendin yazabilirsin.</div>
+        </div>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◎</div>
-        <h3>Backend & API</h3>
-        <p>Güvenli, ölçeklenebilir backend altyapıları. Mikroservis mimarisi ve cloud-native çözümler.</p>
-        <div class="service-stack">Node.js · Python · PostgreSQL · AWS</div>
+      
+      <div class="bot-quick-replies" id="quickReplies">
+        <button class="qr-btn" data-q="q1">Fiyatlandırma nasıl çalışıyor?</button>
+        <button class="qr-btn" data-q="q2">Kodların sahipliği kimde oluyor?</button>
+        <button class="qr-btn" data-q="q3">Bir proje ne kadar sürede biter?</button>
+        <button class="qr-btn" data-q="q4">Yarım kalmış bir projeyi devralır mısınız?</button>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◆</div>
-        <h3>Yapay Zeka Entegrasyonu</h3>
-        <p>İşletme süreçlerinizi AI ile modernize edin. LLM entegrasyonları, otomasyon ve akıllı analitik sistemler.</p>
-        <div class="service-stack">OpenAI · LangChain · RAG · MLOps</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">◇</div>
-        <h3>SaaS Geliştirme</h3>
-        <p>Fikrinizi bir SaaS ürününe dönüştürüyoruz. MVP'den tam ölçekli platforma, startup ortağınız olarak.</p>
-        <div class="service-stack">Multi-tenant · Auth · Stripe · Analytics</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">○</div>
-        <h3>Kurumsal Yazılım</h3>
-        <p>ERP, CRM ve özel kurumsal çözümler. Şirketinizin iş süreçlerini dijitalleştirin, verimliliği artırın.</p>
-        <div class="service-stack">ERP · CRM · Dashboard · Entegrasyon</div>
+      
+      <div class="bot-input-area">
+        <input type="text" id="botInput" placeholder="Bir soru sorun veya komut girin..." autocomplete="off">
+        <button id="botSendBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SÜREÇ -->
-<section class="process" id="nasil">
+<!-- SÜREÇ (PIPELINE) -->
+<section class="process-strict" id="nasil">
   <div class="process-inner">
     <div class="section-header reveal">
-      <div class="section-label">Nasıl Çalışıyoruz</div>
-      <h2>Projeniz bizde<br><span>beş adımda hayat buluyor.</span></h2>
+      <div class="section-label" data-i18n="process-label">SÜREÇ & METODOLOJİ</div>
+      <h2 data-i18n="process-title">MÜHENDİSLİK<br><span>BORU HATTI (PIPELINE)</span></h2>
     </div>
-    <div class="process-steps">
-      <div class="process-step reveal">
-        <div class="step-num">01</div>
-        <div class="step-content">
-          <h3>Keşif</h3>
-          <p>Probleminizi, hedeflerinizi ve kullanıcılarınızı derinlemesine anlıyoruz. Kod yazmadan önce düşünüyoruz.</p>
+    
+    <div class="pipeline-grid">
+      
+      <div class="pipeline-item reveal">
+        <div class="pl-node">
+          <span class="pl-icon">1</span>
+          <div class="pl-line"></div>
         </div>
-        <div class="step-line"></div>
+        <div class="pl-content">
+          <div class="pl-terminal">
+            <span class="term-prompt">~/atay $</span> git init &amp;&amp; analyze
+          </div>
+          <h3 class="pl-title">KEŞİF & ANALİZ</h3>
+          <p class="pl-desc">Probleminizi ve hedeflerinizi anlıyoruz. Kod yazmadan önce mantıksal mimariyi kuruyoruz.</p>
+        </div>
       </div>
-      <div class="process-step reveal">
-        <div class="step-num">02</div>
-        <div class="step-content">
-          <h3>Tasarım</h3>
-          <p>Kullanıcı deneyimini önce kağıtta tasarlıyoruz. Her ekran, her akış mantıklı olana kadar devam ediyoruz.</p>
+
+      <div class="pipeline-item reveal">
+        <div class="pl-node">
+          <span class="pl-icon">2</span>
+          <div class="pl-line"></div>
         </div>
-        <div class="step-line"></div>
+        <div class="pl-content">
+          <div class="pl-terminal">
+            <span class="term-prompt">~/atay $</span> design --ui --ux
+          </div>
+          <h3 class="pl-title">TASARIM (UX/UI)</h3>
+          <p class="pl-desc">Kullanıcı deneyimini tasarlıyor, her ekran mantıklı olana kadar wireframe aşamasında kalıyoruz.</p>
+        </div>
       </div>
-      <div class="process-step reveal">
-        <div class="step-num">03</div>
-        <div class="step-content">
-          <h3>Geliştirme</h3>
-          <p>Temiz, ölçeklenebilir ve sürdürülebilir kod yazıyoruz. Haftalık sprint'lerle ilerliyoruz, sizi sürekli bilgilendiriyoruz.</p>
+
+      <div class="pipeline-item reveal">
+        <div class="pl-node">
+          <span class="pl-icon">3</span>
+          <div class="pl-line"></div>
         </div>
-        <div class="step-line"></div>
+        <div class="pl-content">
+          <div class="pl-terminal">
+            <span class="term-prompt">~/atay $</span> npm run build --clean
+          </div>
+          <h3 class="pl-title">GELİŞTİRME</h3>
+          <p class="pl-desc">Temiz, ölçeklenebilir ve sürdürülebilir kod. Haftalık sprint'lerle ilerliyor, şeffaf çalışıyoruz.</p>
+        </div>
       </div>
-      <div class="process-step reveal">
-        <div class="step-num">04</div>
-        <div class="step-content">
-          <h3>Teslimat</h3>
-          <p>Test edilmiş, canlıya hazır ürünü teslim ediyoruz. Sürpriz yok, geç teslimat yok.</p>
+
+      <div class="pipeline-item reveal">
+        <div class="pl-node">
+          <span class="pl-icon">4</span>
+          <div class="pl-line"></div>
         </div>
-        <div class="step-line"></div>
+        <div class="pl-content">
+          <div class="pl-terminal">
+            <span class="term-prompt">~/atay $</span> docker push production
+          </div>
+          <h3 class="pl-title">TEST & TESLİMAT</h3>
+          <p class="pl-desc">Test edilmiş, canlıya hazır ürünü sunuyoruz. Sürpriz hata yok, geciken teslimat yok.</p>
+        </div>
       </div>
-      <div class="process-step reveal">
-        <div class="step-num">05</div>
-        <div class="step-content">
-          <h3>Destek</h3>
-          <p>Bırakmıyoruz. Bakım, güncelleme ve yeni özellikler için uzun vadeli ortağınız olmaya devam ediyoruz.</p>
+
+      <div class="pipeline-item reveal">
+        <div class="pl-node">
+          <span class="pl-icon">5</span>
         </div>
+        <div class="pl-content">
+          <div class="pl-terminal">
+            <span class="term-prompt">~/atay $</span> systemctl status active
+          </div>
+          <h3 class="pl-title">DESTEK & BAKIM</h3>
+          <p class="pl-desc">Bırakıp gitmiyoruz. Bakım, güncelleme ve yeni özellikler için altyapınızı canlı tutuyoruz.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEDEN ATAY (DARK PREMIUM BENTO) -->
+<section class="why-dark" id="neden">
+  <div class="why-d-inner">
+    <div class="why-d-header reveal">
+      <div class="section-label" style="color: var(--gray-500);" data-i18n="why-label">FARKIMIZ</div>
+      <h2 data-i18n="why-title">Neden<br><span>Atay?</span></h2>
+    </div>
+    
+    <div class="why-d-grid">
+      <!-- Card 1: Wide -->
+      <div class="wd-card wd-wide reveal">
+         <div class="wd-glow"></div>
+         <div class="wd-content">
+            <span class="wd-num">01</span>
+            <h3>Kendi ürünlerimizi işletiyoruz.</h3>
+            <p>Yazılım geliştirmekle kalmıyoruz, kendi ürünlerimizi de sahaya sürüyoruz. Bu, her projeye farklı bakmamızı sağlıyor.</p>
+         </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="wd-card reveal">
+         <div class="wd-glow-blue"></div>
+         <div class="wd-content">
+            <span class="wd-num">02</span>
+            <h3>Önce problem, sonra çözüm.</h3>
+            <p>Doğru soruyu sormadan kod yazmıyoruz. Bazen en iyi çözüm daha az teknolojiden geçiyor.</p>
+         </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="wd-card reveal">
+         <div class="wd-glow-purple"></div>
+         <div class="wd-content">
+            <span class="wd-num">03</span>
+            <h3>Doğrudan iletişim.</h3>
+            <p>Proje boyunca işinizi yapan mühendislerle konuşursunuz. Aracı yok, filtre yok.</p>
+         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- NEDEN ATAY -->
-<section class="why">
-  <div class="why-inner">
-    <div class="why-left reveal">
-      <div class="section-label">Neden Atay</div>
-      <h2>Sadece kod<br>yazmıyoruz.</h2>
-      <p>Kendi ürünlerimizi de biz işletiyoruz. Bu, müşterilerimizin sorunlarını gerçekten anladığımız anlamına geliyor.</p>
-      <a href="#iletisim" class="btn-dark">Konuşalım →</a>
-    </div>
-    <div class="why-right">
-      <div class="why-card reveal">
-        <div class="why-icon">⚡</div>
-        <h3>Kendi ürünümüzü işletiyoruz</h3>
-        <p>EduQR ve TwinTarım bizim. Yani teknik borç, bakım maliyeti, kullanıcı sorunlarını bizzat yaşıyoruz. Müşterimizin yerine geçebiliyoruz.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-icon">🎯</div>
-        <h3>Problem odaklı düşünüyoruz</h3>
-        <p>Teknoloji seçmeden önce problemi anlıyoruz. En popüler framework değil, en doğru çözüm ne ise onu kullanıyoruz.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-icon">🔗</div>
-        <h3>Şeffaf ve dürüst iletişim</h3>
-        <p>3 kişilik ekip olmanın avantajı: doğrudan iletişim. Proje yöneticisi yok, asistan yok — seninle bizzat çalışan mühendisler var.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- İLETİŞİM -->
 <section class="contact" id="iletisim">
   <div class="contact-inner">
     <div class="contact-left reveal">
-      <div class="section-label">İletişim</div>
-      <h2>Projenizi<br>konuşalım.</h2>
-      <p>Fikrinizi, probleminizi veya hedeflerinizi paylaşın. 24 saat içinde dönüş yapıyor, ücretsiz keşif görüşmesi planlıyoruz.</p>
+      <div class="section-label" data-i18n="contact-label">İLETİŞİM</div>
+      <h2 data-i18n="contact-title">Projenizi<br>konuşalım.</h2>
+      <p data-i18n="contact-desc">Bir fikriniz ya da devam eden bir projeniz varsa dinlemeye hazırız. En geç 24 saat içinde dönüş yapıyoruz.</p>
       <div class="contact-info">
         <a href="mailto:info@atay.io" class="contact-link">
           <span>✉</span> info@atay.io
         </a>
         <div class="contact-location">
-          <span>📍</span> Konya, Türkiye
+          <span>📍</span> Global
         </div>
       </div>
     </div>
@@ -351,7 +519,7 @@
           <label>Ne yapmak istiyorsunuz?</label>
           <textarea placeholder="Probleminizi, hedefinizi veya fikrinizi kısaca anlatın..." rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn-dark full">Gönder →</button>
+        <button type="submit" class="btn-primary full" data-i18n="form-submit">Projenizi Başlatın →</button>
       </form>
     </div>
   </div>
@@ -363,7 +531,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo">ATAY<span>.</span></div>
-        <p>Fikri ürüne, problemi çözüme dönüştürüyoruz.<br>Konya'dan dünyaya.</p>
+        <p data-i18n="footer-desc">Fikri ürüne, problemi çözüme dönüştürüyoruz.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -388,8 +556,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Atay. Tüm hakları saklıdır.</p>
-      <p>Konya, Türkiye</p>
+      <div class="f-legal">
+        <p data-i18n="footer-legal">Atay Yazılım Stüdyosu, resmi olarak <a href="https://eduxperts.com.tr" target="_blank" style="color: #3b82f6; text-decoration: none;">EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.</a> bünyesinde faaliyet göstermektedir.</p>
+        <p data-i18n="footer-copy">© 2026 EduXperts. Tüm hakları saklıdır.</p>
+      </div>
     </div>
   </div>
 </footer>
