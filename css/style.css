@@ -871,8 +871,8 @@ nav.scrolled {
 @media (max-width: 900px) {
   .why-d-grid { grid-template-columns: 1fr; }
   .wd-wide { grid-column: span 1; }
-}/* ATAY BOT (TERMINAL CHAT) */
-.atay-bot { background: var(--black); padding: 120px 48px; }
+}/* TRIDEA BOT (TERMINAL CHAT) */
+.tridea-bot { background: var(--black); padding: 120px 48px; }
 .bot-inner { max-width: 900px; margin: 0 auto; }
 .bot-header { text-align: center; margin-bottom: 64px; }
 .bot-header h2 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: var(--white); letter-spacing: -0.02em; margin-top: 16px;}

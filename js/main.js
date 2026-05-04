@@ -32,7 +32,7 @@ const translations = {
     'card-saas-meta': 'SAAS & ERP · STRIPE & MULTI-TENANT',
     'card-saas-desc': 'Abonelik sistemi, çok kiracılı mimari, özel ERP. Büyüdükçe sizinle büyüyen platformlar.',
     'card-eng-title': 'MÜHENDİSLİK KÜLTÜRÜ',
-    'card-eng-meta': 'ATAY · MÜHENDİSLİK KÜLTÜRÜ',
+    'card-eng-meta': 'TRIDEA · MÜHENDİSLİK KÜLTÜRÜ',
     'card-eng-desc': 'Temiz kod, sağlam mimari, sürdürülebilir sistemler. Teslim edip geçmiyoruz.',
     'products-label': 'KENDİ ÜRETTİKLERİMİZ',
     'products-title': 'ÜRÜNLER',
@@ -54,7 +54,7 @@ const translations = {
     'p5-title': 'DESTEK & BAKIM',
     'p5-desc': 'Bırakıp gitmiyoruz. Bakım, güncelleme ve yeni özellikler için altyapınızı canlı tutuyoruz.',
     'why-label': 'FARKIMIZ',
-    'why-title': 'Neden<br><span>Atay?</span>',
+    'why-title': 'Neden<br><span>Tridea?</span>',
     'why-1-title': 'Kendi ürünlerimizi işletiyoruz.',
     'why-1-desc': 'Yazılım geliştirmekle kalmıyoruz, kendi ürünlerimizi de sahaya sürüyoruz. Bu, her projeye farklı bakmamızı sağlıyor.',
     'why-2-title': 'Önce problem, sonra çözüm.',
@@ -62,7 +62,7 @@ const translations = {
     'why-3-title': 'Doğrudan iletişim.',
     'why-3-desc': 'Proje boyunca işinizi yapan mühendislerle konuşursunuz. Aracı yok, filtre yok.',
     'bot-label': 'HIZLI YANITLAR',
-    'bot-title': 'Merak ettikleriniz<br>için <span class="c-accent">AtayBot</span>.',
+    'bot-title': 'Merak ettikleriniz<br>için <span class="c-accent">TrideaBot</span>.',
     'contact-label': 'İLETİŞİM',
     'contact-title': 'Projenizi<br>konuşalım.',
     'contact-desc': 'Bir fikriniz ya da devam eden bir projeniz varsa dinlemeye hazırız. En geç 24 saat içinde dönüş yapıyoruz.',
@@ -81,7 +81,7 @@ const translations = {
     'footer-saas': 'SaaS',
     'footer-process': 'Süreç',
     'footer-contact': 'İletişim',
-    'footer-legal': 'Atay Yazılım Stüdyosu, resmi olarak <a href="https://eduxperts.com.tr" target="_blank" style="color:#3b82f6;text-decoration:none;">EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.</a> bünyesinde faaliyet göstermektedir.',
+    'footer-legal': 'Tridea Yazılım Stüdyosu, resmi olarak <a href="https://eduxperts.com.tr" target="_blank" style="color:#3b82f6;text-decoration:none;">EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.</a> bünyesinde faaliyet göstermektedir.',
     'footer-copy': '© 2026 EduXperts. Tüm hakları saklıdır.',
   },
   en: {
@@ -114,7 +114,7 @@ const translations = {
     'card-saas-meta': 'SAAS & ERP · STRIPE & MULTI-TENANT',
     'card-saas-desc': 'Subscription systems, multi-tenant architecture, custom ERP. Platforms that scale as you grow.',
     'card-eng-title': 'ENGINEERING CULTURE',
-    'card-eng-meta': 'ATAY · ENGINEERING CULTURE',
+    'card-eng-meta': 'TRIDEA · ENGINEERING CULTURE',
     'card-eng-desc': 'Clean code, solid architecture, sustainable systems. We don\'t just ship and leave.',
     'products-label': 'WHAT WE\'VE BUILT',
     'products-title': 'PRODUCTS',
@@ -136,7 +136,7 @@ const translations = {
     'p5-title': 'SUPPORT & MAINTENANCE',
     'p5-desc': 'We don\'t disappear. We keep your infrastructure alive for updates and new features.',
     'why-label': 'OUR DIFFERENCE',
-    'why-title': 'Why<br><span>Atay?</span>',
+    'why-title': 'Why<br><span>Tridea?</span>',
     'why-1-title': 'We run our own products.',
     'why-1-desc': 'We don\'t just develop software — we also ship our own products. This changes how we look at every project.',
     'why-2-title': 'Problem first, solution second.',
@@ -144,7 +144,7 @@ const translations = {
     'why-3-title': 'Direct communication.',
     'why-3-desc': 'You talk to the engineers building your product throughout the project. No middlemen, no filters.',
     'bot-label': 'QUICK ANSWERS',
-    'bot-title': 'Questions?<br>Ask <span class="c-accent">AtayBot</span>.',
+    'bot-title': 'Questions?<br>Ask <span class="c-accent">TrideaBot</span>.',
     'contact-label': 'CONTACT',
     'contact-title': 'Let\'s talk about<br>your project.',
     'contact-desc': 'If you have an idea or an ongoing project, we\'re ready to listen. We\'ll get back to you within 24 hours.',
@@ -163,7 +163,7 @@ const translations = {
     'footer-saas': 'SaaS',
     'footer-process': 'Process',
     'footer-contact': 'Contact',
-    'footer-legal': 'Atay Software Studio operates under <a href="https://eduxperts.com.tr" target="_blank" style="color:#3b82f6;text-decoration:none;">EduXperts Education Consulting and Software Inc.</a>',
+    'footer-legal': 'Tridea Software Studio operates under <a href="https://eduxperts.com.tr" target="_blank" style="color:#3b82f6;text-decoration:none;">EduXperts Education Consulting and Software Inc.</a>',
     'footer-copy': '© 2026 EduXperts. All rights reserved.',
   }
 };
@@ -235,7 +235,7 @@ function colorize(raw) {
 // TYPEWRITER
 function startTypewriter() {
   const lines = [
-    { text: '// atay.h — since: 2020', delay: 0 },
+    { text: '// tridea.h — since: 2020', delay: 0 },
     { text: '// Merhaba!', delay: 400 },
     { text: '', delay: 700 },
     { text: 'const vision = await imagine();', delay: 900 },
@@ -429,7 +429,7 @@ document.querySelectorAll('.b-acc-head').forEach(head => {
   });
 });
 
-// ATAY TABS
+// TRIDEA TABS
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -441,7 +441,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-// ATAY BOT (TERMINAL CHAT)
+// TRIDEA BOT (TERMINAL CHAT)
 const chatArea = document.getElementById('chatArea');
 const quickReplies = document.getElementById('quickReplies');
 const botInput = document.getElementById('botInput');
