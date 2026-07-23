@@ -68,15 +68,6 @@ npx serve .
 
 Then open `http://localhost:8000` in your browser.
 
-## Known Limitations / TODO
-
-- **The contact form and TrideaBot are not connected to a real backend.** Form submission only simulates UI feedback (no data is actually sent anywhere); TrideaBot returns static, predefined answers — there is no real AI/LLM integration.
-- The PNGs under `assets/images/` are large (~15 MB total, `twintarim-bg.png` alone is ~5.6 MB) — should be compressed/optimized.
-- `css/style.css` has some duplicated/conflicting rule blocks (selectors like `.product-card`, `.mockup-img`, `.phone-mockup` are defined more than once) and one malformed/orphaned rule — needs cleanup.
-- The brand was renamed from "Atay" to "Tridea" mid-project; some leftover traces of the old name remain (e.g. the `A` avatar letter in the chat UI).
-- The `*_eski.png` (old) images can be removed if no longer used.
-- No `.gitignore`; `.DS_Store` files have leaked into the repo — worth adding one.
-
 ## Developer
 
 Tridea is a site built to showcase projects developed together by three university friends. The website itself (HTML/CSS/JS) was built entirely by Esranil Doğan.
