@@ -27,13 +27,15 @@ A single-page, fully **static** site. No framework, build tooling, or backend de
 
 ## Screenshots
 
-| Hero | Services |
+| Hero | Products |
 |---|---|
-| ![Hero section](assets/screenshots/hero.jpg) | ![Services section](assets/screenshots/services.jpg) |
+| ![Hero section](assets/screenshots/hero.jpg) | ![Products section](assets/screenshots/products.jpg) |
 
-| Products | Why Tridea |
+| TrideaBot | Engineering Pipeline |
 |---|---|
-| ![Products section](assets/screenshots/products.jpg) | ![Why Tridea section](assets/screenshots/why-tridea.jpg) |
+| ![TrideaBot section](assets/screenshots/tridea-bot.jpg) | ![Pipeline section](assets/screenshots/pipeline.jpg) |
+
+![Contact section](assets/screenshots/contact.jpg)
 
 ## Tech Stack
 
@@ -54,7 +56,8 @@ tridea/
 ├── js/
 │   └── main.js           i18n, animations, sticky-scroll, TrideaBot, form
 └── assets/
-    └── images/            Product images (EduQR, TwinTarım mockups/backgrounds)
+    ├── images/            Product images (EduQR, TwinTarım mockups/backgrounds)
+    └── screenshots/        README preview screenshots
 ```
 
 ## Running Locally
