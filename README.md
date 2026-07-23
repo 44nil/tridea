@@ -25,6 +25,10 @@ A single-page, fully **static** site. No framework, build tooling, or backend de
 - Custom cursor, marquee strip, responsive mobile menu
 - No external libraries/CDNs besides Google Fonts
 
+## Demo
+
+![Full page scroll-through demo](assets/screenshots/tridea-demo.gif)
+
 ## Screenshots
 
 | Hero | Products |
