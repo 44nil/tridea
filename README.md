@@ -3,7 +3,6 @@
 Landing page for Tridea, a software studio operating under [EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.](https://eduxperts.com.tr) that builds web, mobile, and AI software.
 
 **Live products:**
-- [EduQR](https://eduqr.tr) — QR-based digital menu system (SaaS)
 - [TwinTarım](https://www.twintarim.space) — satellite-data-driven agricultural decision support platform
 
 ## About
@@ -13,7 +12,7 @@ A single-page, fully **static** site. No framework, build tooling, or backend de
 ### Sections
 - **Hero** — typewriter-animated code window
 - **Services** (`#hizmetler`) — sticky-scroll card list (web, mobile, AI/backend, enterprise SaaS)
-- **Products** (`#urunler`) — EduQR and TwinTarım portfolio grid
+- **Products** (`#urunler`) — TwinTarım portfolio grid
 - **TrideaBot** (`#sorular`) — demo chatbot UI with predefined answers
 - **Process** (`#nasil`) — pipeline visualization
 - **Why Us** (`#neden`) — dark bento grid cards
@@ -25,21 +24,13 @@ A single-page, fully **static** site. No framework, build tooling, or backend de
 - Custom cursor, marquee strip, responsive mobile menu
 - No external libraries/CDNs besides Google Fonts
 
-## Demo
-
-![Full page scroll-through demo](assets/screenshots/tridea-demo.gif)
-
 ## Screenshots
 
-| Hero | Products |
+| Hero | TrideaBot |
 |---|---|
-| ![Hero section](assets/screenshots/hero.jpg) | ![Products section](assets/screenshots/products.jpg) |
+| ![Hero section](assets/screenshots/hero.jpg) | ![TrideaBot section](assets/screenshots/tridea-bot.jpg) |
 
-| TrideaBot | Engineering Pipeline |
-|---|---|
-| ![TrideaBot section](assets/screenshots/tridea-bot.jpg) | ![Pipeline section](assets/screenshots/pipeline.jpg) |
-
-![Contact section](assets/screenshots/contact.jpg)
+![Pipeline section](assets/screenshots/pipeline.jpg)
 
 ## Tech Stack
 
@@ -60,7 +51,7 @@ tridea/
 ├── js/
 │   └── main.js           i18n, animations, sticky-scroll, TrideaBot, form
 └── assets/
-    ├── images/            Product images (EduQR, TwinTarım mockups/backgrounds)
+    ├── images/            Product mockup/background images
     └── screenshots/        README preview screenshots
 ```
 
