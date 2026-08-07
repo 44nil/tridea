@@ -39,16 +39,15 @@ const translations = {
     'eduqr-meta': 'SAAS PLATFORM · DİJİTAL MENÜ',
     'eduqr-desc': 'Dijital menü sistemi. T.C. Ticaret Bakanlığı mevzuatına uygun, QR kod ile güncellenir.',
     'card2-meta': 'MOBİL MÜHENDİSLİK',
-    'card2-title': 'ETKİLEŞİMLİ MOBİL MEKANİKLER',
-    'card2-desc': 'Küresel uygulama mağazalarına dağıtılan yüksek performanslı mobil konseptler ve bağımsız oyunlar; bellek yönetimi ve yüksek FPS arayüz döngülerine özel önem veriyoruz.',
+    'card2-title': 'EDUXPERTS GAME STUDIO',
+    'card2-desc': 'Sadece müşteriler için mobil yazılım geliştirmiyoruz — kendi ürünlerimizi de yayınlıyoruz. Pixel Art Club ve Pizza Run, App Store ve Google Play\'de canlı.',
     'process-label': 'SÜREÇ & METODOLOJİ',
     'process-title': 'MÜHENDİSLİK<br><span>BORU HATTI (PIPELINE)</span>',
     'intl-label': 'AB PROJELERİ',
     'intl-title': 'AB Projeleri',
     'startuplab-badge': 'AVRUPA BİRLİĞİ TARAFINDAN FONLANIYOR • KA210-ADU',
-    'startuplab-title': 'StartupLab Framework',
-    'startuplab-desc': 'Yetişkinlere ve NEET bireylere dijital girişimcilik becerileri kazandırıyoruz. Litvanya ve Fransa\'daki ortaklarla birlikte, Mart 2027\'ye kadar sürecek bu Erasmus+ KA210-ADU projesine eğitim tasarımı ve teknoloji uzmanlığıyla katkı sağlayan üç ortak kuruluştan biriyiz.',
-    'startuplab-cta': "StartupLab'ı Keşfedin ↗",
+    'startuplab-title': 'StartupLab Projects',
+    'startuplab-desc': 'Yetişkinlere ve NEET bireylere e-ticaret ve dijital pazarlamadan yapay zeka destekli iş araçlarına ve mentorluğa kadar dijital girişimcilik becerileri kazandırıyoruz. Litvanya ve Fransa\'daki ortaklarla birlikte, Mart 2027\'ye kadar sürecek bu Erasmus+ KA210-ADU projesine eğitim tasarımı ve teknoloji uzmanlığıyla katkı sağlayan üç ortak kuruluştan biriyiz.',
     'p1-title': 'KEŞİF & ANALİZ',
     'p1-desc': 'Probleminizi ve hedeflerinizi anlıyoruz. Kod yazmadan önce mantıksal mimariyi kuruyoruz.',
     'p2-title': 'TASARIM (UX/UI)',
@@ -127,16 +126,15 @@ const translations = {
     'eduqr-meta': 'SAAS PLATFORM · DIGITAL MENU',
     'eduqr-desc': 'Digital menu system. Compliant with Turkish Trade Ministry regulations, updated via QR code.',
     'card2-meta': 'MOBILE ENGINEERING',
-    'card2-title': 'INTERACTIVE MOBILE MECHANICS',
-    'card2-desc': 'High-performance mobile concepts and indie games deployed across global app stores, focusing heavily on memory management and high-FPS interface rendering loops.',
+    'card2-title': 'EDUXPERTS GAME STUDIO',
+    'card2-desc': "We don't just build mobile software for clients — we ship our own. Pixel Art Club and Pizza Run are live on the App Store and Google Play.",
     'process-label': 'PROCESS & METHODOLOGY',
     'process-title': 'ENGINEERING<br><span>PIPELINE</span>',
     'intl-label': 'EU PROJECTS',
     'intl-title': 'EU Projects',
     'startuplab-badge': 'CO-FUNDED BY THE EUROPEAN UNION • KA210-ADU',
-    'startuplab-title': 'StartupLab Framework',
-    'startuplab-desc': "Empowering adults and NEETs with digital entrepreneurship skills. We're a partner organization — alongside teams in Lithuania and France — contributing training design and technology expertise to this Erasmus+ KA210-ADU project running through March 2027.",
-    'startuplab-cta': 'Explore StartupLab ↗',
+    'startuplab-title': 'StartupLab Projects',
+    'startuplab-desc': "Empowering adults and NEETs with digital entrepreneurship skills — from e-commerce and digital marketing to AI-powered business tools and mentorship. We're a partner organization — alongside teams in Lithuania and France — contributing training design and technology expertise to this Erasmus+ KA210-ADU project running through March 2027.",
     'p1-title': 'DISCOVERY & ANALYSIS',
     'p1-desc': 'We understand your problem and goals. Before writing any code, we map the architecture.',
     'p2-title': 'DESIGN (UX/UI)',
@@ -374,13 +372,21 @@ if (form) {
   });
 }
 
-// STARTUPLAB PHOTO FOLDER — click to fan out / click to close
+// STARTUPLAB PHOTO FOLDER — click to open a blurred full-screen lightbox
 const slFolderWrap = document.getElementById('slFolderWrap');
-if (slFolderWrap) {
-  const toggleFolder = () => slFolderWrap.classList.toggle('open');
-  slFolderWrap.querySelector('.sl-folder-front').addEventListener('click', toggleFolder);
+const slLightbox = document.getElementById('slLightbox');
+if (slFolderWrap && slLightbox) {
+  const openLightbox = () => slLightbox.classList.add('open');
+  const closeLightbox = () => slLightbox.classList.remove('open');
+
+  slFolderWrap.querySelector('.sl-folder-front').addEventListener('click', openLightbox);
   slFolderWrap.querySelectorAll('.sl-folder-photo').forEach(photo => {
-    photo.addEventListener('click', toggleFolder);
+    photo.addEventListener('click', openLightbox);
+  });
+
+  slLightbox.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
   });
 }
 
