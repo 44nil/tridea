@@ -3,7 +3,7 @@
 Landing page for Tridea, a software studio operating under [EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.](https://eduxperts.com.tr) that builds web, mobile, and AI software.
 
 **Live products:**
-- [TwinTarım](https://www.twintarim.space) — satellite-data-driven agricultural decision support platform
+- [EduQR](https://eduqr.tr) — digital menu system
 
 ## About
 
@@ -12,7 +12,7 @@ A single-page, fully **static** site. No framework, build tooling, or backend de
 ### Sections
 - **Hero** — typewriter-animated code window
 - **Services** (`#hizmetler`) — sticky-scroll card list (web, mobile, AI/backend, enterprise SaaS)
-- **Products** (`#urunler`) — TwinTarım portfolio grid
+- **Products** (`#urunler`) — EduQR portfolio card
 - **TrideaBot** (`#sorular`) — demo chatbot UI with predefined answers
 - **Process** (`#nasil`) — pipeline visualization
 - **Why Us** (`#neden`) — dark bento grid cards

@@ -8,41 +8,47 @@ const translations = {
     'nav-process': 'Süreç',
     'nav-contact': 'İletişim',
     'nav-cta': 'Teklif Al →',
-    'hero-badge': 'An <a href="https://eduxperts.com.tr" target="_blank" class="parent-link">EduXperts</a> Company',
-    'hero-title': 'Fikir alıyoruz,<br><em>ürüne</em><br>dönüştürüyoruz.',
-    'hero-sub': 'EduQR ve TwinTarım bizim.<br>Müşteri projelerini de aynı titizlikle yapıyoruz.',
+    'hero-title': 'Karmaşık algoritmalar alıyor,<br>onları<br><em>çözümlere</em> dönüştürüyoruz.',
+    'hero-sub': 'Tescilli bulut çözümlerinden uluslararası teknik altyapılara kadar.<br>Kurumsal firmalar ve küresel eğitim ağları için ölçeklenebilir sistemler mimarilendiriyoruz.',
     'hero-btn-primary': 'Projenizi Konuşalım',
     'hero-btn-secondary': 'Ürünlerimizi Gör ↓',
     'svc-tag-1': '01. Studio',
-    'svc-title-1': 'Sizin için<br><em>ne üretebiliriz?</em>',
+    'svc-title-1': 'Mühendisliğini yaptığımız<br><em>teknoloji.</em>',
     'svc-desc-1': 'Web, mobil ya da yapay zeka — ihtiyaca göre doğru teknolojiyi seçiyor, başından sonuna kadar birlikte ilerliyoruz.',
     'svc-tag-2': '02. Mühendislik',
     'svc-title-2': 'İşin içinde<br><em>olmak.</em>',
     'svc-desc-2': 'Kendi ürünlerimizi de sahaya sürdüğümüz için her projeye uzun vadeli bakıyoruz.',
-    'card-web-title': 'KURUMSAL WEB UYGULAMALARI',
-    'card-web-meta': 'WEB GELİŞTİRME · NEXT.JS & REACT',
-    'card-web-desc': 'Sıfırdan ya da mevcut sisteminizi modernize ederek. Next.js, React ve TypeScript ile üretim kalitesinde.',
-    'card-mobile-title': 'MOBİL UYGULAMALAR',
-    'card-mobile-meta': 'MOBİL UYGULAMA · IOS & ANDROID',
-    'card-mobile-desc': 'iOS ve Android için akıcı, hafif uygulamalar. Kullanıcı deneyimi her kararın merkezinde.',
-    'card-ai-title': 'YAPAY ZEKA & ALTYAPI',
-    'card-ai-meta': 'AI & BACKEND · PYTHON & AWS',
-    'card-ai-desc': 'İş süreçlerinizi otomatikleştirmek ya da ürününüze AI özelliği eklemek için doğru model, doğru entegrasyon.',
-    'card-saas-title': 'KURUMSAL YAZILIM & SAAS',
-    'card-saas-meta': 'SAAS & ERP · STRIPE & MULTI-TENANT',
-    'card-saas-desc': 'Abonelik sistemi, çok kiracılı mimari, özel ERP. Büyüdükçe sizinle büyüyen platformlar.',
+    'card-cloud-title': 'ÖLÇEKLENEBİLİR BULUT & SAAS',
+    'card-cloud-meta': 'BULUT & SAAS · NEXT.JS & AWS',
+    'card-cloud-desc': 'Sıfırdan kurulum ya da mevcut platformunuzu modernize ederek. Modern mimarilerle üretim kalitesinde, çok kiracılı (multi-tenant) bulut yazılımları geliştiriyoruz. Altyapı mühendisliğimiz, EduQR gibi kendi ürünlerimizi de besliyor.',
+    'card-mobile-title': 'MOBİL MÜHENDİSLİK',
+    'card-mobile-meta': 'MOBİL MÜHENDİSLİK · FLUTTER & REACT NATIVE',
+    'card-mobile-desc': 'Optimize edilmiş çapraz platform mimarilerini global uygulama mağazalarına taşıyoruz. Canlıdaki uygulama ve oyunlarımızın deneyimiyle bellek yönetimi, gerçek zamanlı veri senkronizasyonu ve yüksek FPS arayüz döngülerine özellikle önem veriyoruz.',
+    'card-edtech-title': 'EĞİTİM TEKNOLOJİSİ ÇÖZÜMLERİ',
+    'card-edtech-meta': 'EĞİTİM TEKNOLOJİSİ · LMS & İÇERİK',
+    'card-edtech-desc': 'Güvenilir Öğrenme Yönetim Sistemleri (LMS) ve etkileşimli e-öğrenme içerikleri geliştiriyoruz. Modern yazılım gelişmelerini bir araya getirerek öğretim deneyimini güçlendiriyor, içeriği tüm cihazlarda erişilebilir kılıyoruz.',
+    'card-eu-title': 'AB & AR-GE DANIŞMANLIĞI',
+    'card-eu-meta': 'AB & AR-GE · HORIZON & ERASMUS+',
+    'card-eu-desc': 'AB fonlama araştırması, teknik danışmanlık, proje başvurularının hazırlanması ve sunumu konusunda kapsamlı destek sağlıyoruz. Erasmus+ ve Horizon çerçevelerinde kültürler arası öğrenmeyi teşvik ediyor, ağlar kuruyor ve uluslararası ortaklıkları yönetiyoruz.',
     'card-eng-title': 'MÜHENDİSLİK KÜLTÜRÜ',
-    'card-eng-meta': 'TRIDEA · MÜHENDİSLİK KÜLTÜRÜ',
+    'card-eng-meta': 'EDUXPERTS · MÜHENDİSLİK KÜLTÜRÜ',
     'card-eng-desc': 'Temiz kod, sağlam mimari, sürdürülebilir sistemler. Teslim edip geçmiyoruz.',
     'products-label': 'KENDİ ÜRETTİKLERİMİZ',
-    'products-title': 'ÜRÜNLER',
-    'products-sub': 'Kendi geliştirdiğimiz, piyasada çalışan iki ürün.',
+    'products-title': 'ÜRÜNLER & GİRİŞİMLER',
+    'products-sub': 'Kendi geliştirdiğimiz ve işlettiğimiz canlı yazılımlar.',
     'eduqr-meta': 'SAAS PLATFORM · DİJİTAL MENÜ',
     'eduqr-desc': 'Dijital menü sistemi. T.C. Ticaret Bakanlığı mevzuatına uygun, QR kod ile güncellenir.',
-    'twintarim-meta': 'TARIM TEKNOLOJİSİ · NASA & ESA',
-    'twintarim-desc': 'Uydu verisiyle tarım karar desteği. NASA ve ESA verileriyle gerçek zamanlı arazi analizi.',
+    'card2-meta': 'MOBİL MÜHENDİSLİK',
+    'card2-title': 'ETKİLEŞİMLİ MOBİL MEKANİKLER',
+    'card2-desc': 'Küresel uygulama mağazalarına dağıtılan yüksek performanslı mobil konseptler ve bağımsız oyunlar; bellek yönetimi ve yüksek FPS arayüz döngülerine özel önem veriyoruz.',
     'process-label': 'SÜREÇ & METODOLOJİ',
     'process-title': 'MÜHENDİSLİK<br><span>BORU HATTI (PIPELINE)</span>',
+    'intl-label': 'AB PROJELERİ',
+    'intl-title': 'AB Projeleri',
+    'startuplab-badge': 'AVRUPA BİRLİĞİ TARAFINDAN FONLANIYOR • KA210-ADU',
+    'startuplab-title': 'StartupLab Framework',
+    'startuplab-desc': 'Yetişkinlere ve NEET bireylere dijital girişimcilik becerileri kazandırıyoruz. Litvanya ve Fransa\'daki ortaklarla birlikte, Mart 2027\'ye kadar sürecek bu Erasmus+ KA210-ADU projesine eğitim tasarımı ve teknoloji uzmanlığıyla katkı sağlayan üç ortak kuruluştan biriyiz.',
+    'startuplab-cta': "StartupLab'ı Keşfedin ↗",
     'p1-title': 'KEŞİF & ANALİZ',
     'p1-desc': 'Probleminizi ve hedeflerinizi anlıyoruz. Kod yazmadan önce mantıksal mimariyi kuruyoruz.',
     'p2-title': 'TASARIM (UX/UI)',
@@ -54,7 +60,7 @@ const translations = {
     'p5-title': 'DESTEK & BAKIM',
     'p5-desc': 'Bırakıp gitmiyoruz. Bakım, güncelleme ve yeni özellikler için altyapınızı canlı tutuyoruz.',
     'why-label': 'FARKIMIZ',
-    'why-title': 'Neden<br><span>Tridea?</span>',
+    'why-title': 'Neden<br><span>EduXperts?</span>',
     'why-1-title': 'Kendi ürünlerimizi işletiyoruz.',
     'why-1-desc': 'Yazılım geliştirmekle kalmıyoruz, kendi ürünlerimizi de sahaya sürüyoruz. Bu, her projeye farklı bakmamızı sağlıyor.',
     'why-2-title': 'Önce problem, sonra çözüm.',
@@ -62,7 +68,7 @@ const translations = {
     'why-3-title': 'Doğrudan iletişim.',
     'why-3-desc': 'Proje boyunca işinizi yapan mühendislerle konuşursunuz. Aracı yok, filtre yok.',
     'bot-label': 'HIZLI YANITLAR',
-    'bot-title': 'Merak ettikleriniz<br>için <span class="c-accent">TrideaBot</span>.',
+    'bot-title': 'Merak ettikleriniz<br>için <span class="c-accent">EduXpertsBot</span>.',
     'contact-label': 'İLETİŞİM',
     'contact-title': 'Projenizi<br>konuşalım.',
     'contact-desc': 'Bir fikriniz ya da devam eden bir projeniz varsa dinlemeye hazırız. En geç 24 saat içinde dönüş yapıyoruz.',
@@ -81,7 +87,7 @@ const translations = {
     'footer-saas': 'SaaS',
     'footer-process': 'Süreç',
     'footer-contact': 'İletişim',
-    'footer-legal': 'Tridea Yazılım Stüdyosu, resmi olarak <a href="https://eduxperts.com.tr" target="_blank" style="color:#3b82f6;text-decoration:none;">EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.</a> bünyesinde faaliyet göstermektedir.',
+    'footer-legal': 'EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.',
     'footer-copy': '© 2026 EduXperts. Tüm hakları saklıdır.',
   },
   en: {
@@ -90,41 +96,47 @@ const translations = {
     'nav-process': 'Process',
     'nav-contact': 'Contact',
     'nav-cta': 'Get a Quote →',
-    'hero-badge': 'An <a href="https://eduxperts.com.tr" target="_blank" class="parent-link">EduXperts</a> Company',
-    'hero-title': 'We take your idea,<br><em>and turn it</em><br>into a product.',
-    'hero-sub': 'EduQR and TwinTarım are ours.<br>We build client projects with the same care.',
+    'hero-title': 'We take complex algorithms,<br>and architect them<br>into <em>solutions.</em>',
+    'hero-sub': 'From proprietary cloud solutions to international technical frameworks.<br>We architect scalable systems for enterprises and global education networks.',
     'hero-btn-primary': 'Let\'s Talk',
     'hero-btn-secondary': 'See Our Products ↓',
     'svc-tag-1': '01. Studio',
-    'svc-title-1': 'What can we<br><em>build for you?</em>',
+    'svc-title-1': 'The technology<br><em>we engineer.</em>',
     'svc-desc-1': 'Web, mobile, or AI — we choose the right technology and see it through from start to finish.',
     'svc-tag-2': '02. Engineering',
     'svc-title-2': 'In it for<br><em>the long run.</em>',
     'svc-desc-2': 'Because we ship our own products too, we take a long-term view on every project.',
-    'card-web-title': 'ENTERPRISE WEB APPLICATIONS',
-    'card-web-meta': 'WEB DEVELOPMENT · NEXT.JS & REACT',
-    'card-web-desc': 'From scratch or modernizing your existing system. Production-grade with Next.js, React and TypeScript.',
-    'card-mobile-title': 'MOBILE APPLICATIONS',
-    'card-mobile-meta': 'MOBILE APP · IOS & ANDROID',
-    'card-mobile-desc': 'Smooth, lightweight apps for iOS and Android. User experience at the center of every decision.',
-    'card-ai-title': 'AI & INFRASTRUCTURE',
-    'card-ai-meta': 'AI & BACKEND · PYTHON & AWS',
-    'card-ai-desc': 'The right model, the right integration — to automate your processes or add AI capabilities to your product.',
-    'card-saas-title': 'ENTERPRISE SOFTWARE & SAAS',
-    'card-saas-meta': 'SAAS & ERP · STRIPE & MULTI-TENANT',
-    'card-saas-desc': 'Subscription systems, multi-tenant architecture, custom ERP. Platforms that scale as you grow.',
+    'card-cloud-title': 'SCALABLE CLOUD & SAAS',
+    'card-cloud-meta': 'CLOUD & SAAS · NEXT.JS & AWS',
+    'card-cloud-desc': 'From scratch or modernizing your existing platform. We build production-grade, multi-tenant cloud software with modern architectures. Our infrastructure engineering fuels custom workflows and proprietary software like EduQR.',
+    'card-mobile-title': 'MOBILE ENGINEERING',
+    'card-mobile-meta': 'MOBILE ENGINEERING · FLUTTER & REACT NATIVE',
+    'card-mobile-desc': 'Deploying optimized cross-platform architectures to global app stores. Backed by our live applications and games, we focus heavily on memory management, real-time data synchronization, and high-FPS interface loops.',
+    'card-edtech-title': 'EDTECH SOLUTIONS',
+    'card-edtech-meta': 'EDTECH · LMS & COURSEWARE',
+    'card-edtech-desc': 'We engineer reliable Learning Management Systems (LMS) and interactive e-learning courseware. We combine modern software advancements to enhance the teaching experience, making content accessible across all devices.',
+    'card-eu-title': 'EU & R&D CONSULTING',
+    'card-eu-meta': 'EU & R&D · HORIZON & ERASMUS+',
+    'card-eu-desc': 'We provide comprehensive EU funding research, technical consultation, preparation, and submission of project applications. We promote intercultural learning, building networks, and managing international partnerships under Erasmus+ and Horizon frameworks.',
     'card-eng-title': 'ENGINEERING CULTURE',
-    'card-eng-meta': 'TRIDEA · ENGINEERING CULTURE',
+    'card-eng-meta': 'EDUXPERTS · ENGINEERING CULTURE',
     'card-eng-desc': 'Clean code, solid architecture, sustainable systems. We don\'t just ship and leave.',
     'products-label': 'WHAT WE\'VE BUILT',
-    'products-title': 'PRODUCTS',
-    'products-sub': 'Two products we built. Both in production.',
+    'products-title': 'PRODUCTS & VENTURES',
+    'products-sub': 'Live software we build and run ourselves.',
     'eduqr-meta': 'SAAS PLATFORM · DIGITAL MENU',
     'eduqr-desc': 'Digital menu system. Compliant with Turkish Trade Ministry regulations, updated via QR code.',
-    'twintarim-meta': 'AGRITECH · NASA & ESA',
-    'twintarim-desc': 'Agricultural decision support with satellite data. Real-time field analysis using NASA and ESA data.',
+    'card2-meta': 'MOBILE ENGINEERING',
+    'card2-title': 'INTERACTIVE MOBILE MECHANICS',
+    'card2-desc': 'High-performance mobile concepts and indie games deployed across global app stores, focusing heavily on memory management and high-FPS interface rendering loops.',
     'process-label': 'PROCESS & METHODOLOGY',
     'process-title': 'ENGINEERING<br><span>PIPELINE</span>',
+    'intl-label': 'EU PROJECTS',
+    'intl-title': 'EU Projects',
+    'startuplab-badge': 'CO-FUNDED BY THE EUROPEAN UNION • KA210-ADU',
+    'startuplab-title': 'StartupLab Framework',
+    'startuplab-desc': "Empowering adults and NEETs with digital entrepreneurship skills. We're a partner organization — alongside teams in Lithuania and France — contributing training design and technology expertise to this Erasmus+ KA210-ADU project running through March 2027.",
+    'startuplab-cta': 'Explore StartupLab ↗',
     'p1-title': 'DISCOVERY & ANALYSIS',
     'p1-desc': 'We understand your problem and goals. Before writing any code, we map the architecture.',
     'p2-title': 'DESIGN (UX/UI)',
@@ -136,7 +148,7 @@ const translations = {
     'p5-title': 'SUPPORT & MAINTENANCE',
     'p5-desc': 'We don\'t disappear. We keep your infrastructure alive for updates and new features.',
     'why-label': 'OUR DIFFERENCE',
-    'why-title': 'Why<br><span>Tridea?</span>',
+    'why-title': 'Why<br><span>EduXperts?</span>',
     'why-1-title': 'We run our own products.',
     'why-1-desc': 'We don\'t just develop software — we also ship our own products. This changes how we look at every project.',
     'why-2-title': 'Problem first, solution second.',
@@ -144,7 +156,7 @@ const translations = {
     'why-3-title': 'Direct communication.',
     'why-3-desc': 'You talk to the engineers building your product throughout the project. No middlemen, no filters.',
     'bot-label': 'QUICK ANSWERS',
-    'bot-title': 'Questions?<br>Ask <span class="c-accent">TrideaBot</span>.',
+    'bot-title': 'Questions?<br>Ask <span class="c-accent">EduXpertsBot</span>.',
     'contact-label': 'CONTACT',
     'contact-title': 'Let\'s talk about<br>your project.',
     'contact-desc': 'If you have an idea or an ongoing project, we\'re ready to listen. We\'ll get back to you within 24 hours.',
@@ -163,12 +175,12 @@ const translations = {
     'footer-saas': 'SaaS',
     'footer-process': 'Process',
     'footer-contact': 'Contact',
-    'footer-legal': 'Tridea Software Studio operates under <a href="https://eduxperts.com.tr" target="_blank" style="color:#3b82f6;text-decoration:none;">EduXperts Education Consulting and Software Inc.</a>',
+    'footer-legal': 'EduXperts Education Consulting and Software Inc.',
     'footer-copy': '© 2026 EduXperts. All rights reserved.',
   }
 };
 
-let currentLang = 'tr';
+let currentLang = 'en';
 
 function setLanguage(lang) {
   currentLang = lang;
@@ -235,8 +247,8 @@ function colorize(raw) {
 // TYPEWRITER
 function startTypewriter() {
   const lines = [
-    { text: '// tridea.h — since: 2020', delay: 0 },
-    { text: '// Merhaba!', delay: 400 },
+    { text: '// eduxperts.h — since: 2020', delay: 0 },
+    { text: '// Hello!', delay: 400 },
     { text: '', delay: 700 },
     { text: 'const vision = await imagine();', delay: 900 },
     { text: '', delay: 1300 },
@@ -349,15 +361,26 @@ if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Gönderildi ✓';
+    const originalText = btn.textContent;
+    btn.textContent = currentLang === 'tr' ? 'Gönderildi ✓' : 'Submitted ✓';
     btn.style.opacity = '0.6';
     btn.disabled = true;
     setTimeout(() => {
-      btn.textContent = 'Gönder →';
+      btn.textContent = originalText;
       btn.style.opacity = '1';
       btn.disabled = false;
       form.reset();
     }, 3000);
+  });
+}
+
+// STARTUPLAB PHOTO FOLDER — click to fan out / click to close
+const slFolderWrap = document.getElementById('slFolderWrap');
+if (slFolderWrap) {
+  const toggleFolder = () => slFolderWrap.classList.toggle('open');
+  slFolderWrap.querySelector('.sl-folder-front').addEventListener('click', toggleFolder);
+  slFolderWrap.querySelectorAll('.sl-folder-photo').forEach(photo => {
+    photo.addEventListener('click', toggleFolder);
   });
 }
 
@@ -429,7 +452,7 @@ document.querySelectorAll('.b-acc-head').forEach(head => {
   });
 });
 
-// TRIDEA TABS
+// EDUXPERTS TABS
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -441,7 +464,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-// TRIDEA BOT (TERMINAL CHAT)
+// EDUXPERTS BOT (TERMINAL CHAT)
 const chatArea = document.getElementById('chatArea');
 const quickReplies = document.getElementById('quickReplies');
 const botInput = document.getElementById('botInput');
