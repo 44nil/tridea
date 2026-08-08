@@ -6,10 +6,11 @@ const translations = {
     'nav-services': 'Hizmetler',
     'nav-products': 'Ürünler',
     'nav-courses': 'Eğitimler',
+    'nav-news': 'Haberler',
     'nav-contact': 'İletişim',
     'nav-cta': 'Teklif Al →',
     'hero-title': 'Karmaşık algoritmaları<br>ele alıyor,<br><em>çözümlere</em> dönüştürüyoruz.',
-    'hero-sub': 'Yazılım üretip yayına alıyoruz — bazen müşteri için, bazen kendimiz için.<br>AB destekli projeleri kazanmaktan hayata geçirmeye kadar yanınızdayız.',
+    'hero-sub': 'Yazılım üretip yayına alıyoruz — bazen müşteri için, bazen kendimiz için. AB destekli projeleri kazanmaktan hayata geçirmeye kadar yanınızdayız.',
     'hero-btn-primary': 'Projenizi Konuşalım',
     'hero-btn-secondary': 'Ürünlerimizi Gör ↓',
     'svc-tag-1': '01. Studio',
@@ -66,6 +67,10 @@ const translations = {
     'courses-cta-title': 'Bir kursla mı ilgileniyorsunuz?',
     'courses-cta-desc': 'Bize ulaşın, en geç 24 saat içinde dönüş yapalım.',
     'courses-cta-btn': 'Bize Ulaşın →',
+    'news-label': 'HABERLER & GELİŞMELER',
+    'news-page-title': 'EduXperts\'ten<br>son gelişmeler.',
+    'news-teaser-title': 'EduXperts\'ten<br>son gelişmeler.',
+    'news-cta': 'Tüm Haberleri Gör →',
     'why-label': 'FARKIMIZ',
     'why-title': 'Neden<br><span>EduXperts?</span>',
     'why-1-title': 'Kendi ürünlerimizi işletiyoruz.',
@@ -90,6 +95,9 @@ const translations = {
     'form-company-label': 'Şirket / Proje',
     'form-message-label': 'Ne yapmak istiyorsunuz?',
     'form-submit': 'Projenizi Başlatın →',
+    'form-sending': 'Gönderiliyor...',
+    'form-success': 'Teşekkürler! Mesajınız iletildi, 24 saat içinde dönüş yapacağız.',
+    'form-error': 'Bir şeyler ters gitti. Lütfen doğrudan info@eduxperts.com.tr adresine yazın.',
     'footer-desc': 'Fikri ürüne, problemi çözüme dönüştürüyoruz.',
     'footer-col1': 'Ürünler',
     'footer-col2': 'Hizmetler',
@@ -107,10 +115,11 @@ const translations = {
     'nav-services': 'Services',
     'nav-products': 'Products',
     'nav-courses': 'Courses',
+    'nav-news': 'News',
     'nav-contact': 'Contact',
     'nav-cta': 'Get a Quote →',
     'hero-title': 'We take complex algorithms,<br>and architect them<br>into <em>solutions.</em>',
-    'hero-sub': 'We build software that ships — for clients, and for ourselves.<br>We also help organizations win and deliver EU-funded projects.',
+    'hero-sub': 'We build software that ships — for clients, and for ourselves. We also help organizations secure and deliver EU-funded projects.',
     'hero-btn-primary': 'Let\'s Talk',
     'hero-btn-secondary': 'See Our Products ↓',
     'svc-tag-1': '01. Studio',
@@ -167,6 +176,10 @@ const translations = {
     'courses-cta-title': 'Interested in a course?',
     'courses-cta-desc': "Get in touch and we'll get back to you within 24 hours.",
     'courses-cta-btn': 'Contact Us →',
+    'news-label': 'NEWS & UPDATES',
+    'news-page-title': 'Latest from<br>EduXperts.',
+    'news-teaser-title': 'Latest from<br>EduXperts.',
+    'news-cta': 'View All News →',
     'why-label': 'OUR DIFFERENCE',
     'why-title': 'Why<br><span>EduXperts?</span>',
     'why-1-title': 'We run our own products.',
@@ -191,6 +204,9 @@ const translations = {
     'form-company-label': 'Company / Project',
     'form-message-label': 'What would you like to do?',
     'form-submit': 'Start Your Project →',
+    'form-sending': 'Sending...',
+    'form-success': 'Thanks! Your message is in. We\'ll get back to you within 24 hours.',
+    'form-error': 'Something went wrong. Please email us directly at info@eduxperts.com.tr.',
     'footer-desc': 'Turning ideas into products, problems into solutions.',
     'footer-col1': 'Products',
     'footer-col2': 'Services',
@@ -323,17 +339,17 @@ function startTypewriter() {
     { text: '// eduxperts.h — since: 2020', delay: 0 },
     { text: '', delay: 500 },
     { text: 'console.log("Hello, we\'re EduXperts.");', delay: 800 },
-    { text: 'console.log("We design, build, and ship software.");', delay: 1700 },
-    { text: 'console.log("Some of it is even our own.");', delay: 2700 },
-    { text: 'console.log("Local products. International partnerships.");', delay: 3700 },
-    { text: '', delay: 4900 },
-    { text: 'if (yourIdea) {', delay: 5200 },
-    { text: '  console.log("We can build it.");', delay: 6000 },
-    { text: "} else {", delay: 7000 },
-    { text: "  console.log(\"Let's figure it out together.\");", delay: 7500 },
-    { text: '}', delay: 8600 },
-    { text: '', delay: 9000 },
-    { text: '// ✓ ready when you are.', delay: 9300, isLast: true },
+    { text: '', delay: 2000 },
+    { text: 'if (yourIdea) {', delay: 2300 },
+    { text: '  console.log("We can build it.");', delay: 3100 },
+    { text: "} else {", delay: 4100 },
+    { text: "  console.log(\"Let's figure it out together.\");", delay: 4600 },
+    { text: '}', delay: 5700 },
+    { text: '', delay: 6100 },
+    { text: 'console.log("We design, build, and ship software.");', delay: 6400 },
+    { text: 'console.log("Some of it is even our own.");', delay: 7400 },
+    { text: '', delay: 8400 },
+    { text: '// ✓ ready when you are.', delay: 8700, isLast: true },
   ];
 
   const codeBody = document.querySelector('.code-body');
@@ -633,6 +649,46 @@ if(botSendBtn && quickReplies) {
   botSendBtn.addEventListener('click', handleUserInput);
   botInput.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') handleUserInput();
+  });
+}
+
+// CONTACT FORM
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  const formStatus = document.getElementById('formStatus');
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const submitDefaultKey = submitBtn.getAttribute('data-i18n');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const t = translations[currentLang] || translations.en;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = t['form-sending'];
+    formStatus.textContent = '';
+    formStatus.className = 'form-status';
+
+    try {
+      const res = await fetch('contact.php', {
+        method: 'POST',
+        body: new FormData(contactForm)
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        formStatus.textContent = t['form-success'];
+        formStatus.className = 'form-status success';
+        contactForm.reset();
+      } else {
+        throw new Error(data.error || 'unknown');
+      }
+    } catch (err) {
+      formStatus.textContent = t['form-error'];
+      formStatus.className = 'form-status error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = t[submitDefaultKey];
+    }
   });
 }
 
