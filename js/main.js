@@ -5,11 +5,11 @@ const translations = {
   tr: {
     'nav-services': 'Hizmetler',
     'nav-products': 'Ürünler',
-    'nav-process': 'Süreç',
+    'nav-courses': 'Eğitimler',
     'nav-contact': 'İletişim',
     'nav-cta': 'Teklif Al →',
-    'hero-title': 'Karmaşık algoritmalar alıyor,<br>onları<br><em>çözümlere</em> dönüştürüyoruz.',
-    'hero-sub': 'Tescilli bulut çözümlerinden uluslararası teknik altyapılara kadar.<br>Kurumsal firmalar ve küresel eğitim ağları için ölçeklenebilir sistemler mimarilendiriyoruz.',
+    'hero-title': 'Karmaşık algoritmaları<br>ele alıyor,<br><em>çözümlere</em> dönüştürüyoruz.',
+    'hero-sub': 'Yazılım üretip yayına alıyoruz — bazen müşteri için, bazen kendimiz için.<br>AB destekli projeleri kazanmaktan hayata geçirmeye kadar yanınızdayız.',
     'hero-btn-primary': 'Projenizi Konuşalım',
     'hero-btn-secondary': 'Ürünlerimizi Gör ↓',
     'svc-tag-1': '01. Studio',
@@ -20,10 +20,10 @@ const translations = {
     'svc-desc-2': 'Kendi ürünlerimizi de sahaya sürdüğümüz için her projeye uzun vadeli bakıyoruz.',
     'card-cloud-title': 'ÖLÇEKLENEBİLİR BULUT & SAAS',
     'card-cloud-meta': 'BULUT & SAAS · NEXT.JS & AWS',
-    'card-cloud-desc': 'Sıfırdan kurulum ya da mevcut platformunuzu modernize ederek. Modern mimarilerle üretim kalitesinde, çok kiracılı (multi-tenant) bulut yazılımları geliştiriyoruz. Altyapı mühendisliğimiz, EduQR gibi kendi ürünlerimizi de besliyor.',
+    'card-cloud-desc': 'Sıfırdan kurulum ya da mevcut platformunuzu modernize ederek. Modern mimarilerle üretim kalitesinde, çok kiracılı (multi-tenant) bulut yazılımları geliştiriyoruz. Altyapı mühendisliğimiz, EduQR gibi kendi ürünlerimizi de güçlendiriyor.',
     'card-mobile-title': 'MOBİL MÜHENDİSLİK',
     'card-mobile-meta': 'MOBİL MÜHENDİSLİK · FLUTTER & REACT NATIVE',
-    'card-mobile-desc': 'Optimize edilmiş çapraz platform mimarilerini global uygulama mağazalarına taşıyoruz. Canlıdaki uygulama ve oyunlarımızın deneyimiyle bellek yönetimi, gerçek zamanlı veri senkronizasyonu ve yüksek FPS arayüz döngülerine özellikle önem veriyoruz.',
+    'card-mobile-desc': 'Optimize edilmiş çapraz platform uygulamalarını global uygulama mağazalarında yayınlıyoruz. Canlıdaki uygulama ve oyunlarımızın deneyimiyle bellek yönetimi, gerçek zamanlı veri senkronizasyonu ve yüksek FPS arayüz döngülerine özellikle önem veriyoruz.',
     'card-edtech-title': 'EĞİTİM TEKNOLOJİSİ ÇÖZÜMLERİ',
     'card-edtech-meta': 'EĞİTİM TEKNOLOJİSİ · LMS & İÇERİK',
     'card-edtech-desc': 'Güvenilir Öğrenme Yönetim Sistemleri (LMS) ve etkileşimli e-öğrenme içerikleri geliştiriyoruz. Modern yazılım gelişmelerini bir araya getirerek öğretim deneyimini güçlendiriyor, içeriği tüm cihazlarda erişilebilir kılıyoruz.',
@@ -41,28 +41,31 @@ const translations = {
     'card2-meta': 'MOBİL MÜHENDİSLİK',
     'card2-title': 'EDUXPERTS GAME STUDIO',
     'card2-desc': 'Sadece müşteriler için mobil yazılım geliştirmiyoruz — kendi ürünlerimizi de yayınlıyoruz. Pixel Art Club ve Pizza Run, App Store ve Google Play\'de canlı.',
-    'process-label': 'SÜREÇ & METODOLOJİ',
-    'process-title': 'MÜHENDİSLİK<br><span>BORU HATTI (PIPELINE)</span>',
-    'intl-label': 'AB PROJELERİ',
     'intl-title': 'AB Projesi',
     'startuplab-badge': 'AVRUPA BİRLİĞİ TARAFINDAN FONLANIYOR • KA210-ADU',
     'startuplab-title': 'StartupLab Project',
     'startuplab-desc': 'Yetişkinlere ve NEET bireylere e-ticaret ve dijital pazarlamadan yapay zeka destekli iş araçlarına ve mentorluğa kadar dijital girişimcilik becerileri kazandırıyoruz. Litvanya ve Fransa\'daki ortaklarla birlikte, Mart 2027\'ye kadar sürecek bu Erasmus+ KA210-ADU projesine eğitim tasarımı ve teknoloji uzmanlığıyla katkı sağlayan üç ortak kuruluştan biriyiz.',
+    'intl-meta-ref-label': 'Proje Referansı',
+    'intl-meta-duration-label': 'Süre',
+    'intl-meta-duration': 'Eki 2025 – Mar 2027 (18 ay)',
+    'intl-partners-label': 'PROJE ORTAKLARI',
     'sdg-intro': 'Aynı zamanda Horizon Europe, Erasmus+, COSME gibi AB programlarında stratejik bir ortağız — ve bir teknoloji şirketi olarak gerçekten katkı sağlayabileceğimiz BM Sürdürülebilir Kalkınma Amaçlarına odaklanıyoruz.',
     'sdg-4-title': 'Nitelikli<br>Eğitim',
     'sdg-5-title': 'Toplumsal Cinsiyet<br>Eşitliği',
     'sdg-10-title': 'Eşitsizliklerin<br>Azaltılması',
     'sdg-17-title': 'Amaçlar İçin<br>Ortaklıklar',
-    'p1-title': 'KEŞİF & ANALİZ',
-    'p1-desc': 'Probleminizi ve hedeflerinizi anlıyoruz. Kod yazmadan önce mantıksal mimariyi kuruyoruz.',
-    'p2-title': 'TASARIM (UX/UI)',
-    'p2-desc': 'Kullanıcı deneyimini tasarlıyor, her ekran mantıklı olana kadar wireframe aşamasında kalıyoruz.',
-    'p3-title': 'GELİŞTİRME',
-    'p3-desc': 'Temiz, ölçeklenebilir ve sürdürülebilir kod. Haftalık sprint\'lerle ilerliyor, şeffaf çalışıyoruz.',
-    'p4-title': 'TEST & TESLİMAT',
-    'p4-desc': 'Test edilmiş, canlıya hazır ürünü sunuyoruz. Sürpriz hata yok, geciken teslimat yok.',
-    'p5-title': 'DESTEK & BAKIM',
-    'p5-desc': 'Bırakıp gitmiyoruz. Bakım, güncelleme ve yeni özellikler için altyapınızı canlı tutuyoruz.',
+    'courses-label': 'EĞİTİMLER & KURSLAR',
+    'courses-title': 'İşletme ve Erasmus+<br>eğitim programları.',
+    'courses-desc': 'İşletme becerileri eğitimleri ve eğitim sektörü için Erasmus+ KA1 kursları.',
+    'courses-cta': 'Tüm Eğitimleri Gör →',
+    'courses-page-title': 'İşletme ve Erasmus+<br>eğitim programları.',
+    'business-courses-title': 'İşletme Kursları',
+    'business-courses-desc': 'Uzmanlaşmış işletme eğitim programlarımızla profesyonel becerilerinizi geliştirin.',
+    'erasmus-courses-title': 'Erasmus+ Kursları',
+    'erasmus-courses-desc': 'Erasmus+ Anahtar Eylem 1 Bireysel Öğrenme Hareketliliği programı kapsamında eğitim sektörü için kurslar.',
+    'courses-cta-title': 'Bir kursla mı ilgileniyorsunuz?',
+    'courses-cta-desc': 'Bize ulaşın, en geç 24 saat içinde dönüş yapalım.',
+    'courses-cta-btn': 'Bize Ulaşın →',
     'why-label': 'FARKIMIZ',
     'why-title': 'Neden<br><span>EduXperts?</span>',
     'why-1-title': 'Kendi ürünlerimizi işletiyoruz.',
@@ -73,6 +76,12 @@ const translations = {
     'why-3-desc': 'Proje boyunca işinizi yapan mühendislerle konuşursunuz. Aracı yok, filtre yok.',
     'bot-label': 'HIZLI YANITLAR',
     'bot-title': 'Merak ettikleriniz<br>için <span class="c-accent">EduXpertsBot</span>.',
+    'bot-greeting': 'Merhaba! Proje sürecimiz, fiyatlandırma veya kullandığımız teknolojiler hakkında ne öğrenmek istersin? Aşağıdan bir soru seç ya da kendi sorunu yaz.',
+    'bot-q1': 'Bir proje ortalama ne kadar sürede tamamlanır?',
+    'bot-q2': 'Fiyatlandırma nasıl belirleniyor?',
+    'bot-q3': 'Teslim edilen kodun mülkiyeti kime ait olur?',
+    'bot-q4': 'Yarım kalmış bir projeyi devralıyor musunuz?',
+    'bot-q5': 'Eğitim ve kurs hizmetleriniz var mı?',
     'contact-label': 'İLETİŞİM',
     'contact-title': 'Projenizi<br>konuşalım.',
     'contact-desc': 'Bir fikriniz ya da devam eden bir projeniz varsa dinlemeye hazırız. En geç 24 saat içinde dönüş yapıyoruz.',
@@ -97,11 +106,11 @@ const translations = {
   en: {
     'nav-services': 'Services',
     'nav-products': 'Products',
-    'nav-process': 'Process',
+    'nav-courses': 'Courses',
     'nav-contact': 'Contact',
     'nav-cta': 'Get a Quote →',
     'hero-title': 'We take complex algorithms,<br>and architect them<br>into <em>solutions.</em>',
-    'hero-sub': 'From proprietary cloud solutions to international technical frameworks.<br>We architect scalable systems for enterprises and global education networks.',
+    'hero-sub': 'We build software that ships — for clients, and for ourselves.<br>We also help organizations win and deliver EU-funded projects.',
     'hero-btn-primary': 'Let\'s Talk',
     'hero-btn-secondary': 'See Our Products ↓',
     'svc-tag-1': '01. Studio',
@@ -133,28 +142,31 @@ const translations = {
     'card2-meta': 'MOBILE ENGINEERING',
     'card2-title': 'EDUXPERTS GAME STUDIO',
     'card2-desc': "We don't just build mobile software for clients — we ship our own. Pixel Art Club and Pizza Run are live on the App Store and Google Play.",
-    'process-label': 'PROCESS & METHODOLOGY',
-    'process-title': 'ENGINEERING<br><span>PIPELINE</span>',
-    'intl-label': 'EU PROJECTS',
     'intl-title': 'EU Project',
     'startuplab-badge': 'CO-FUNDED BY THE EUROPEAN UNION • KA210-ADU',
     'startuplab-title': 'StartupLab Project',
     'startuplab-desc': "Empowering adults and NEETs with digital entrepreneurship skills — from e-commerce and digital marketing to AI-powered business tools and mentorship. We're a partner organization — alongside teams in Lithuania and France — contributing training design and technology expertise to this Erasmus+ KA210-ADU project running through March 2027.",
+    'intl-meta-ref-label': 'Project Reference',
+    'intl-meta-duration-label': 'Duration',
+    'intl-meta-duration': 'Oct 2025 – Mar 2027 (18 months)',
+    'intl-partners-label': 'PROJECT PARTNERS',
     'sdg-intro': "We're also a strategic partner in EU programmes — Horizon Europe, Erasmus+, COSME — and focus on the UN Sustainable Development Goals we can genuinely contribute to as a technology company.",
     'sdg-4-title': 'Quality<br>Education',
     'sdg-5-title': 'Gender<br>Equality',
     'sdg-10-title': 'Reduced<br>Inequalities',
     'sdg-17-title': 'Partnerships<br>for the Goals',
-    'p1-title': 'DISCOVERY & ANALYSIS',
-    'p1-desc': 'We understand your problem and goals. Before writing any code, we map the architecture.',
-    'p2-title': 'DESIGN (UX/UI)',
-    'p2-desc': 'We design the user experience, staying in wireframes until every screen makes sense.',
-    'p3-title': 'DEVELOPMENT',
-    'p3-desc': 'Clean, scalable, maintainable code. Weekly sprints, full transparency.',
-    'p4-title': 'TEST & DELIVERY',
-    'p4-desc': 'Tested and production-ready. No surprise bugs, no late deliveries.',
-    'p5-title': 'SUPPORT & MAINTENANCE',
-    'p5-desc': 'We don\'t disappear. We keep your infrastructure alive for updates and new features.',
+    'courses-label': 'TRAINING & COURSES',
+    'courses-title': 'Business &amp; Erasmus+<br>training programs.',
+    'courses-desc': 'Professional business skills training and Erasmus+ KA1 courses for the education sector.',
+    'courses-cta': 'View All Courses →',
+    'courses-page-title': 'Business &amp; Erasmus+<br>training programs.',
+    'business-courses-title': 'Business Courses',
+    'business-courses-desc': 'Enhance your professional skills with our specialized business training programs.',
+    'erasmus-courses-title': 'Erasmus+ Courses',
+    'erasmus-courses-desc': 'Training courses for the educational sector under the programme of Erasmus+ Key Action 1 Individual Learning Mobilities.',
+    'courses-cta-title': 'Interested in a course?',
+    'courses-cta-desc': "Get in touch and we'll get back to you within 24 hours.",
+    'courses-cta-btn': 'Contact Us →',
     'why-label': 'OUR DIFFERENCE',
     'why-title': 'Why<br><span>EduXperts?</span>',
     'why-1-title': 'We run our own products.',
@@ -165,6 +177,12 @@ const translations = {
     'why-3-desc': 'You talk to the engineers building your product throughout the project. No middlemen, no filters.',
     'bot-label': 'QUICK ANSWERS',
     'bot-title': 'Questions?<br>Ask <span class="c-accent">EduXpertsBot</span>.',
+    'bot-greeting': 'Hi! What would you like to know about our project process, pricing, or tech stack? Pick a question below or type your own.',
+    'bot-q1': 'How long does a typical project take?',
+    'bot-q2': 'How is pricing determined?',
+    'bot-q3': 'Who owns the delivered code?',
+    'bot-q4': 'Do you take over unfinished projects?',
+    'bot-q5': 'Do you offer training or courses?',
     'contact-label': 'CONTACT',
     'contact-title': 'Let\'s talk about<br>your project.',
     'contact-desc': 'If you have an idea or an ongoing project, we\'re ready to listen. We\'ll get back to you within 24 hours.',
@@ -204,8 +222,8 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const phKey = el.getAttribute('data-i18n-ph');
     const phMap = {
-      tr: { name: 'Adınız', email: 'mail@sirket.com', company: 'Şirket adınız veya proje ismi', message: 'Probleminizi, hedefinizi veya fikrinizi kısaca anlatın...' },
-      en: { name: 'Your name', email: 'mail@company.com', company: 'Your company or project name', message: 'Tell us about your problem, goal, or idea...' }
+      tr: { name: 'Adınız', email: 'mail@sirket.com', company: 'Şirket adınız veya proje ismi', message: 'Probleminizi, hedefinizi veya fikrinizi kısaca anlatın...', 'bot-input': 'Bir soru sor ya da komut yaz...' },
+      en: { name: 'Your name', email: 'mail@company.com', company: 'Your company or project name', message: 'Tell us about your problem, goal, or idea...', 'bot-input': 'Ask a question or type a command...' }
     };
     if (phMap[lang][phKey]) el.placeholder = phMap[lang][phKey];
   });
@@ -223,51 +241,99 @@ function setLanguage(lang) {
 const introOverlay = document.getElementById('introOverlay');
 const introLogo = document.getElementById('introLogo');
 
-document.body.style.overflow = 'hidden';
+if (introOverlay && introLogo) {
+  document.body.style.overflow = 'hidden';
 
-setTimeout(() => { introLogo.classList.add('fade-out'); }, 1400);
-setTimeout(() => {
-  introOverlay.classList.add('slide-up');
-  document.body.style.overflow = '';
+  setTimeout(() => { introLogo.classList.add('fade-out'); }, 1400);
+  setTimeout(() => {
+    introOverlay.classList.add('slide-up');
+    document.body.style.overflow = '';
+    startTypewriter();
+  }, 2000);
+} else {
   startTypewriter();
-}, 2000);
+}
 
 // COLORIZE — global scope
-function colorize(raw) {
-  if (!raw) return '';
-  // escape HTML first
-  const text = raw.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  // comment lines — whole line gray
-  if (text.trimStart().startsWith('//')) {
-    return `<span class="c-gray">${text}</span>`;
+// Classifies every character of the FINAL line text up front, so the color
+// each character gets while typing never changes later (no "flash" recolor).
+function classifyLine(text) {
+  if (text.trimStart().startsWith('//')) return new Array(text.length).fill('c-gray');
+
+  const classes = new Array(text.length).fill('c-white');
+  let inString = false;
+  let i = 0;
+  while (i < text.length) {
+    const ch = text[i];
+    if (ch === '"') {
+      classes[i] = 'c-orange';
+      inString = !inString;
+      i++;
+      continue;
+    }
+    if (inString) { classes[i] = 'c-orange'; i++; continue; }
+    if (text.startsWith('console', i)) {
+      for (let k = 0; k < 7; k++) classes[i + k] = 'c-purple';
+      i += 7;
+      continue;
+    }
+    if (text.startsWith('log', i)) {
+      for (let k = 0; k < 3; k++) classes[i + k] = 'c-blue';
+      i += 3;
+      continue;
+    }
+    const kwMatch = ['while', 'else', 'if'].find(kw => isKeywordAt(text, i, kw));
+    if (kwMatch) {
+      for (let k = 0; k < kwMatch.length; k++) classes[i + k] = 'c-accent';
+      i += kwMatch.length;
+      continue;
+    }
+    i++;
   }
-  // string literals
-  let result = text.replace(/"([^"]*)"/g, '<span class="c-accent">"$1"</span>');
-  // keywords
-  result = result.replace(/\b(const|return|await)\b/g, '<span class="c-purple">$1</span>');
-  // booleans and functions
-  result = result.replace(/\b(true|false|imagine|build|deploy|console|log)\b/g, '<span class="c-accent">$1</span>');
-  // property keys before colon
-  result = result.replace(/\b(vision|product|modern|innovative|sustainable)\b/g, '<span class="c-orange">$1</span>');
-  return result;
+  return classes;
+}
+
+function isKeywordAt(text, i, kw) {
+  if (!text.startsWith(kw, i)) return false;
+  const isWordChar = c => /[A-Za-z0-9_]/.test(c || '');
+  return !isWordChar(text[i - 1]) && !isWordChar(text[i + kw.length]);
+}
+
+function escapeChar(c) {
+  return c === '&' ? '&amp;' : c === '<' ? '&lt;' : c === '>' ? '&gt;' : c;
+}
+
+function renderColored(text, classes, upto) {
+  let html = '', curCls = null, buf = '';
+  for (let idx = 0; idx < upto; idx++) {
+    const cls = classes[idx];
+    if (cls !== curCls) {
+      if (curCls !== null) html += `<span class="${curCls}">${buf}</span>`;
+      curCls = cls; buf = '';
+    }
+    buf += escapeChar(text[idx]);
+  }
+  if (curCls !== null) html += `<span class="${curCls}">${buf}</span>`;
+  return html;
 }
 
 // TYPEWRITER
 function startTypewriter() {
   const lines = [
     { text: '// eduxperts.h — since: 2020', delay: 0 },
-    { text: '// Hello!', delay: 400 },
-    { text: '', delay: 700 },
-    { text: 'const vision = await imagine();', delay: 900 },
-    { text: '', delay: 1300 },
-    { text: 'const product = await build({', delay: 1400 },
-    { text: '  modern:      true,', delay: 1800 },
-    { text: '  innovative:  true,', delay: 2100 },
-    { text: '  sustainable: true,', delay: 2400 },
-    { text: '});', delay: 2700 },
-    { text: '', delay: 2900 },
-    { text: 'console.log("The best is yet to come.");', delay: 3000 },
-    { text: '// ✓ shipped with purpose.', delay: 3600, isLast: true },
+    { text: '', delay: 500 },
+    { text: 'console.log("Hello, we\'re EduXperts.");', delay: 800 },
+    { text: 'console.log("We design, build, and ship software.");', delay: 1700 },
+    { text: 'console.log("Some of it is even our own.");', delay: 2700 },
+    { text: 'console.log("Local products. International partnerships.");', delay: 3700 },
+    { text: '', delay: 4900 },
+    { text: 'if (yourIdea) {', delay: 5200 },
+    { text: '  console.log("We can build it.");', delay: 6000 },
+    { text: "} else {", delay: 7000 },
+    { text: "  console.log(\"Let's figure it out together.\");", delay: 7500 },
+    { text: '}', delay: 8600 },
+    { text: '', delay: 9000 },
+    { text: '// ✓ ready when you are.', delay: 9300, isLast: true },
   ];
 
   const codeBody = document.querySelector('.code-body');
@@ -281,17 +347,17 @@ function startTypewriter() {
       if (!line.text) { codeBody.appendChild(div); return; }
 
       const plain = line.text;
+      const classes = classifyLine(plain);
       let i = 0;
       codeBody.appendChild(div);
 
       const timer = setInterval(() => {
         i++;
-        const partial = plain.slice(0, i);
-        div.innerHTML = colorize(partial);
+        div.innerHTML = renderColored(plain, classes, i);
         if (i >= plain.length) {
           clearInterval(timer);
           if (line.isLast) {
-            div.innerHTML = colorize(plain) + '<span class="cursor-blink">|</span>';
+            div.innerHTML = renderColored(plain, classes, i) + '<span class="cursor-blink">|</span>';
           }
         }
       }, 36);
@@ -488,22 +554,24 @@ const botSendBtn = document.getElementById('botSendBtn');
 
 const botAnswers = {
   tr: {
-    q1: "Projeye ve kapsama göre değişir. Sabit bütçeli projeler veya haftalık sprint bazlı çalışma şeklinde ilerleyebiliriz. Kapsam netlendikten sonra yazılı bir teklif sunuyoruz.",
-    q2: "Yazdığımız kodun fikri mülkiyeti tamamen size aittir. Proje tamamlandığında tüm repository'leri, belgeler ve konfigürasyonlarla birlikte teslim ediyoruz.",
-    q3: "Kapsama bağlıdır. Basit bir web uygulaması 4–6 haftada tamamlanabilir. Daha kapsamlı SaaS veya mobil projeler 2–4 ay sürebilir. Başlamadan önce net bir zaman çizelgesi sunuyoruz.",
-    q4: "Evet. Mevcut kodu inceliyoruz, durumu değerlendiriyoruz ve sürdürülebilir bir yola koyuyoruz. Devir alma öncesinde teknik değerlendirme yapıyoruz."
+    q1: "Kapsama bağlıdır. Basit bir web uygulaması 4–6 haftada tamamlanabilir. Daha kapsamlı SaaS veya mobil projeler 2–4 ay sürebilir. Başlamadan önce net bir zaman çizelgesi sunuyoruz.",
+    q2: "Projeye ve kapsama göre değişir. Sabit bütçeli projeler veya haftalık sprint bazlı çalışma şeklinde ilerleyebiliriz. Kapsam netlendikten sonra yazılı bir teklif sunuyoruz.",
+    q3: "Teslim ve ödeme tamamlandığında, yazılan kodun fikri mülkiyeti size devredilir; repository, belgeler ve konfigürasyonlarla birlikte teslim ederiz.",
+    q4: "Evet. Mevcut kodu inceliyoruz, durumu değerlendiriyoruz ve sürdürülebilir bir yola koyuyoruz. Devir alma öncesinde teknik değerlendirme yapıyoruz.",
+    q5: "Evet. Kurumlar için iş dünyası eğitimleri ve eğitim sektörü için Erasmus+ KA1 kursları veriyoruz. Tüm kursları <a href=\"courses.html\">buradan</a> inceleyebilirsiniz."
   },
   en: {
-    q1: "It depends on scope. We work with fixed-budget projects or weekly sprint-based engagements. Once scope is defined, we provide a written proposal.",
-    q2: "All code and intellectual property belongs entirely to you. Upon completion, we transfer all repositories with documentation and configuration.",
-    q3: "Depends on scope. A web app can be done in 4–6 weeks. More complex SaaS or mobile projects may take 2–4 months. We provide a clear timeline before starting.",
-    q4: "Yes. We review existing code, assess the state, and put it on a sustainable path. We do a technical assessment before taking over."
+    q1: "Depends on scope. A web app can be done in 4–6 weeks. More complex SaaS or mobile projects may take 2–4 months. We provide a clear timeline before starting.",
+    q2: "It depends on scope. We work with fixed-budget projects or weekly sprint-based engagements. Once scope is defined, we provide a written proposal.",
+    q3: "Once delivery and payment are complete, full IP ownership of the code transfers to you, along with the repository, documentation, and configuration.",
+    q4: "Yes. We review existing code, assess the state, and put it on a sustainable path. We do a technical assessment before taking over.",
+    q5: "Yes. We run business training programs for companies and Erasmus+ KA1 courses for the education sector. You can browse all courses <a href=\"courses.html\">here</a>."
   }
 };
 
 const defaultAnswer = {
-  tr: "Bu soruya hazır cevabım yok, ancak <strong>iletişim formundan</strong> bize ulaşabilirsiniz. En geç 24 saat içinde dönüş yapıyoruz.",
-  en: "I don't have a ready answer for that, but feel free to reach us via the <strong>contact form</strong>. We respond within 24 hours."
+  tr: "Güzel soru — buna en doğru cevabı ekibimizden biri versin. <strong>İletişim formunu</strong> doldur, 24 saat içinde sana dönelim.",
+  en: "Good question — that one's best answered by a real person on our team. Drop it in the <strong>contact form</strong> and we'll get back to you within 24 hours."
 };
 
 function addUserMessage(text) {

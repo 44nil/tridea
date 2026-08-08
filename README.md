@@ -39,7 +39,7 @@ A single-page, fully **static** site. No framework, build tooling, or backend de
 | HTML | Single file, plain HTML5 |
 | CSS | `css/style.css` — custom-property-based hand-written CSS, no framework |
 | JS | `js/main.js` — plain vanilla JavaScript, no library/framework |
-| Fonts | Google Fonts: Cabinet Grotesk, Instrument Sans, JetBrains Mono |
+| Fonts | Google Fonts: Inter, Instrument Sans, JetBrains Mono |
 
 ## Project Structure
 

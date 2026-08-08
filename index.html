@@ -5,10 +5,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EduXperts Software Studio — We Take Ideas, Turn Them Into Products</title>
 <meta name="description" content="EduXperts builds enterprise-grade web, mobile, and AI software. EduQR is ours. We build client projects with the same care." />
+<link rel="canonical" href="https://eduxperts.com.tr/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="EduXperts" />
+<meta property="og:title" content="EduXperts Software Studio — We Take Ideas, Turn Them Into Products" />
+<meta property="og:description" content="EduXperts builds enterprise-grade web, mobile, and AI software. EduQR is ours. We build client projects with the same care." />
+<meta property="og:url" content="https://eduxperts.com.tr/" />
+<meta property="og:image" content="https://eduxperts.com.tr/assets/images/eduqr-mockup.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="EduXperts Software Studio" />
+<meta name="twitter:description" content="EduXperts builds enterprise-grade web, mobile, and AI software. EduQR is ours. We build client projects with the same care." />
+<meta name="twitter:image" content="https://eduxperts.com.tr/assets/images/eduqr-mockup.png" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="alternate icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.",
+  "alternateName": "EduXperts",
+  "url": "https://eduxperts.com.tr/",
+  "logo": "https://eduxperts.com.tr/assets/favicon.svg",
+  "description": "EduXperts builds enterprise-grade web, mobile, and AI software, and consults on EU-funded (Erasmus+) education projects.",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does a typical project take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depends on scope. A web app can be done in 4–6 weeks. More complex SaaS or mobile projects may take 2–4 months. We provide a clear timeline before starting." }
+    },
+    {
+      "@type": "Question",
+      "name": "How is pricing determined?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on scope. We work with fixed-budget projects or weekly sprint-based engagements. Once scope is defined, we provide a written proposal." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the delivered code?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Once delivery and payment are complete, full IP ownership of the code transfers to you, along with the repository, documentation, and configuration." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you take over unfinished projects?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We review existing code, assess its state, and put it on a sustainable path. We do a technical assessment before taking over." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer training or courses?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We run business training programs for companies and Erasmus+ KA1 courses for the education sector. All courses are listed on our Courses page." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -26,7 +85,7 @@
   <ul class="nav-links">
     <li><a href="#hizmetler" data-i18n="nav-services">Services</a></li>
     <li><a href="#urunler" data-i18n="nav-products">Products</a></li>
-    <li><a href="#nasil" data-i18n="nav-process">Process</a></li>
+    <li><a href="#egitimler" data-i18n="nav-courses">Courses</a></li>
     <li><a href="#iletisim" data-i18n="nav-contact">Contact</a></li>
   </ul>
   <div class="lang-toggle">
@@ -43,7 +102,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#hizmetler" class="mob-link">Services</a>
   <a href="#urunler" class="mob-link">Products</a>
-  <a href="#nasil" class="mob-link">Process</a>
+  <a href="#egitimler" class="mob-link">Courses</a>
   <a href="#iletisim" class="mob-link">Contact</a>
   <a href="#iletisim" class="mob-cta">Get a Quote →</a>
 </div>
@@ -62,8 +121,8 @@
       into <em>solutions.</em>
     </h1>
     <p class="hero-sub reveal" data-i18n="hero-sub">
-      From proprietary cloud solutions to international technical frameworks.<br>
-      We architect scalable systems for enterprises and global education networks.
+      We build software that ships — for clients, and for ourselves.<br>
+      We also help organizations win and deliver EU-funded projects.
     </p>
     <div class="hero-actions reveal">
       <a href="#iletisim" class="btn-dark" data-i18n="hero-btn-primary">Let's Talk</a>
@@ -80,17 +139,18 @@
         <span class="code-file">eduxperts/solution.ts</span>
       </div>
       <div class="code-body">
-        <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">problem</span> <span class="c-white">=</span> <span class="c-accent">await</span> <span class="c-white">understand(client);</span></div>
+        <div class="code-line"><span class="c-purple">console</span><span class="c-white">.</span><span class="c-blue">log</span><span class="c-white">(</span><span class="c-orange">"Hello, we're EduXperts."</span><span class="c-white">);</span></div>
+        <div class="code-line"><span class="c-purple">console</span><span class="c-white">.</span><span class="c-blue">log</span><span class="c-white">(</span><span class="c-orange">"We design, build, and ship software."</span><span class="c-white">);</span></div>
+        <div class="code-line"><span class="c-purple">console</span><span class="c-white">.</span><span class="c-blue">log</span><span class="c-white">(</span><span class="c-orange">"Some of it is even our own."</span><span class="c-white">);</span></div>
+        <div class="code-line"><span class="c-purple">console</span><span class="c-white">.</span><span class="c-blue">log</span><span class="c-white">(</span><span class="c-orange">"Local products. International partnerships."</span><span class="c-white">);</span></div>
         <div class="code-line"></div>
-        <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">solution</span> <span class="c-white">=</span> <span class="c-accent">await</span> <span class="c-white">build({</span></div>
-        <div class="code-line indent"><span class="c-orange">tech</span><span class="c-white">:</span> <span class="c-accent">'modern'</span><span class="c-white">,</span></div>
-        <div class="code-line indent"><span class="c-orange">quality</span><span class="c-white">:</span> <span class="c-accent">'production'</span><span class="c-white">,</span></div>
-        <div class="code-line indent"><span class="c-orange">ai</span><span class="c-white">:</span> <span class="c-purple">true</span><span class="c-white">,</span></div>
-        <div class="code-line indent"><span class="c-orange">scalable</span><span class="c-white">:</span> <span class="c-purple">true</span></div>
-        <div class="code-line"><span class="c-white">});</span></div>
+        <div class="code-line"><span class="c-accent">if</span><span class="c-white"> (yourIdea) {</span></div>
+        <div class="code-line"><span class="c-white">  </span><span class="c-purple">console</span><span class="c-white">.</span><span class="c-blue">log</span><span class="c-white">(</span><span class="c-orange">"We can build it."</span><span class="c-white">);</span></div>
+        <div class="code-line"><span class="c-white">} </span><span class="c-accent">else</span><span class="c-white"> {</span></div>
+        <div class="code-line"><span class="c-white">  </span><span class="c-purple">console</span><span class="c-white">.</span><span class="c-blue">log</span><span class="c-white">(</span><span class="c-orange">"Let's figure it out together."</span><span class="c-white">);</span></div>
+        <div class="code-line"><span class="c-white">}</span></div>
         <div class="code-line"></div>
-        <div class="code-line"><span class="c-accent">return</span> <span class="c-white">deploy(solution);</span></div>
-        <div class="code-line typed-line"><span class="c-gray">// ✓ Delivered on time</span><span class="cursor-blink">|</span></div>
+        <div class="code-line typed-line"><span class="c-gray">// ✓ ready when you are.</span><span class="cursor-blink">|</span></div>
       </div>
     </div>
 
@@ -338,15 +398,48 @@
   <div class="network-bg"><div class="network-bg-grid"></div></div>
 
   <div class="intl-header reveal">
-    <div class="section-label" data-i18n="intl-label">EU PROJECTS</div>
     <h2 data-i18n="intl-title">EU Project</h2>
   </div>
 
   <div class="intl-grid">
     <div class="intl-col reveal">
-      <div class="intl-badge" data-i18n="startuplab-badge">CO-FUNDED BY THE EUROPEAN UNION • KA210-ADU</div>
+      <div class="intl-badge">
+        <svg class="eu-flag" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="30" height="20" fill="#003399"/>
+          <defs><path id="eu-star" d="M0,-1 L0.22,-0.31 L0.95,-0.31 L0.36,0.12 L0.59,0.81 L0,0.38 L-0.59,0.81 L-0.36,0.12 L-0.95,-0.31 L-0.22,-0.31 Z"/></defs>
+          <g fill="#FFCC00">
+            <use href="#eu-star" transform="translate(15,3.5) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(18.63,4.75) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(20.63,6.75) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(21.5,10) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(20.63,13.25) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(18.63,15.25) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(15,16.5) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(11.37,15.25) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(9.37,13.25) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(8.5,10) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(9.37,6.75) scale(0.9)"/>
+            <use href="#eu-star" transform="translate(11.37,4.75) scale(0.9)"/>
+          </g>
+        </svg>
+        <span data-i18n="startuplab-badge">CO-FUNDED BY THE EUROPEAN UNION • KA210-ADU</span>
+      </div>
       <h3 class="intl-col-title" data-i18n="startuplab-title">StartupLab Project</h3>
       <p class="intl-col-desc" data-i18n="startuplab-desc">Empowering adults and NEETs with digital entrepreneurship skills — from e-commerce and digital marketing to AI-powered business tools and mentorship. We're a partner organization — alongside teams in Lithuania and France — contributing training design and technology expertise to this Erasmus+ KA210-ADU project running through March 2027.</p>
+
+      <div class="intl-meta">
+        <div class="intl-meta-item"><strong data-i18n="intl-meta-ref-label">Project Reference</strong> 2025-1LT01-KA210-ADU-000355499</div>
+        <div class="intl-meta-item"><strong data-i18n="intl-meta-duration-label">Duration</strong> <span data-i18n="intl-meta-duration">Oct 2025 – Mar 2027 (18 months)</span></div>
+      </div>
+
+      <div class="intl-partners">
+        <div class="intl-partners-label" data-i18n="intl-partners-label">PROJECT PARTNERS</div>
+        <ul class="intl-partners-list">
+          <li><span class="intl-partner-country">LT</span> Panevėžys Chamber of Commerce, Industry and Crafts</li>
+          <li><span class="intl-partner-country">FR</span> Hexagonale Association for Social Innovation and Education</li>
+          <li><span class="intl-partner-country">TR</span> EduXperts</li>
+        </ul>
+      </div>
 
     <div class="sl-folder-wrap reveal" id="slFolderWrap">
       <div class="sl-folder-label">FROM THE FIELD — STARTUPLAB TIMELINE</div>
@@ -421,6 +514,7 @@
         </div>
         <div class="laptop-base-v2"></div>
       </a>
+      <a href="https://startuplabproject.eu" target="_blank" class="intl-visual-hint">↗ startuplabproject.eu</a>
     </div>
   </div>
 
@@ -459,6 +553,43 @@
   </div>
 </section>
 
+<!-- TRAINING & COURSES -->
+<section class="courses-teaser" id="egitimler">
+  <div class="courses-teaser-bg"><div class="courses-teaser-grid"></div></div>
+  <div class="courses-teaser-inner">
+    <div class="courses-teaser-header">
+      <div class="section-label" data-i18n="courses-label">TRAINING & COURSES</div>
+      <h2 data-i18n="courses-title">Business &amp; Erasmus+<br>training programs.</h2>
+    </div>
+
+    <div class="courses-teaser-grid-cols">
+      <div class="courses-col">
+        <h3 data-i18n="business-courses-title">Business Courses</h3>
+        <p data-i18n="business-courses-desc">Enhance your professional skills with our specialized business training programs.</p>
+        <div class="course-cards">
+          <a href="course-details.html?id=pcm" class="course-card" style="--i:0"><span class="course-card-tag">BUSINESS</span><span class="course-card-name">Project Cycle Management</span></a>
+          <a href="course-details.html?id=time" class="course-card" style="--i:1"><span class="course-card-tag">BUSINESS</span><span class="course-card-name">Time Management</span></a>
+          <a href="course-details.html?id=communication" class="course-card" style="--i:2"><span class="course-card-tag">BUSINESS</span><span class="course-card-name">Communication Skills</span></a>
+        </div>
+      </div>
+
+      <div class="courses-col">
+        <h3 data-i18n="erasmus-courses-title">Erasmus+ Courses</h3>
+        <p data-i18n="erasmus-courses-desc">Training courses for the educational sector under the programme of Erasmus+ Key Action 1 Individual Learning Mobilities.</p>
+        <div class="course-cards">
+          <a href="course-details.html?id=inclusive" class="course-card" style="--i:0"><span class="course-card-tag">ERASMUS+</span><span class="course-card-name">Inclusive Education</span></a>
+          <a href="course-details.html?id=ict" class="course-card" style="--i:1"><span class="course-card-tag">ERASMUS+</span><span class="course-card-name">ICT in the Classroom</span></a>
+          <a href="course-details.html?id=flipped" class="course-card" style="--i:2"><span class="course-card-tag">ERASMUS+</span><span class="course-card-name">Flipped Classroom</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="courses-teaser-cta">
+      <a href="courses.html" class="btn-course" data-i18n="courses-cta">View All Courses →</a>
+    </div>
+  </div>
+</section>
+
 <!-- SIKÇA SORULANLAR (BOT) -->
 <section class="tridea-bot" id="sorular">
   <div class="bot-inner">
@@ -477,106 +608,24 @@
       <div class="bot-chat-area" id="chatArea">
         <div class="chat-msg bot-msg">
           <div class="msg-avatar">A</div>
-          <div class="msg-bubble">Hi! What would you like to know about our project process, pricing, or tech stack? Pick a question below or type your own.</div>
+          <div class="msg-bubble" data-i18n="bot-greeting">Hi! What would you like to know about our project process, pricing, or tech stack? Pick a question below or type your own.</div>
         </div>
       </div>
 
       <div class="bot-quick-replies" id="quickReplies">
-        <button class="qr-btn" data-q="q1">How does pricing work?</button>
-        <button class="qr-btn" data-q="q2">Who owns the code?</button>
-        <button class="qr-btn" data-q="q3">How long does a project take?</button>
-        <button class="qr-btn" data-q="q4">Can you take over an unfinished project?</button>
+        <button class="qr-btn" data-q="q1" data-i18n="bot-q1">How long does a typical project take?</button>
+        <button class="qr-btn" data-q="q2" data-i18n="bot-q2">How is pricing determined?</button>
+        <button class="qr-btn" data-q="q3" data-i18n="bot-q3">Who owns the delivered code?</button>
+        <button class="qr-btn" data-q="q4" data-i18n="bot-q4">Do you take over unfinished projects?</button>
+        <button class="qr-btn" data-q="q5" data-i18n="bot-q5">Do you offer training or courses?</button>
       </div>
 
       <div class="bot-input-area">
-        <input type="text" id="botInput" placeholder="Ask a question or type a command..." autocomplete="off">
+        <input type="text" id="botInput" data-i18n-ph="bot-input" placeholder="Ask a question or type a command..." autocomplete="off">
         <button id="botSendBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- SÜREÇ (PIPELINE) -->
-<section class="process-strict" id="nasil">
-  <div class="process-inner">
-    <div class="section-header reveal">
-      <div class="section-label" data-i18n="process-label">PROCESS & METHODOLOGY</div>
-      <h2 data-i18n="process-title">ENGINEERING<br><span>PIPELINE</span></h2>
-    </div>
-
-    <div class="pipeline-grid">
-
-      <div class="pipeline-item reveal">
-        <div class="pl-node">
-          <span class="pl-icon">1</span>
-          <div class="pl-line"></div>
-        </div>
-        <div class="pl-content">
-          <div class="pl-terminal">
-            <span class="term-prompt">~/eduxperts $</span> git init &amp;&amp; analyze
-          </div>
-          <h3 class="pl-title">DISCOVERY & ANALYSIS</h3>
-          <p class="pl-desc">We understand your problem and goals. Before writing any code, we map the architecture.</p>
-        </div>
-      </div>
-
-      <div class="pipeline-item reveal">
-        <div class="pl-node">
-          <span class="pl-icon">2</span>
-          <div class="pl-line"></div>
-        </div>
-        <div class="pl-content">
-          <div class="pl-terminal">
-            <span class="term-prompt">~/eduxperts $</span> design --ui --ux
-          </div>
-          <h3 class="pl-title">DESIGN (UX/UI)</h3>
-          <p class="pl-desc">We design the user experience, staying in wireframes until every screen makes sense.</p>
-        </div>
-      </div>
-
-      <div class="pipeline-item reveal">
-        <div class="pl-node">
-          <span class="pl-icon">3</span>
-          <div class="pl-line"></div>
-        </div>
-        <div class="pl-content">
-          <div class="pl-terminal">
-            <span class="term-prompt">~/eduxperts $</span> npm run build --clean
-          </div>
-          <h3 class="pl-title">DEVELOPMENT</h3>
-          <p class="pl-desc">Clean, scalable, maintainable code. Weekly sprints, full transparency.</p>
-        </div>
-      </div>
-
-      <div class="pipeline-item reveal">
-        <div class="pl-node">
-          <span class="pl-icon">4</span>
-          <div class="pl-line"></div>
-        </div>
-        <div class="pl-content">
-          <div class="pl-terminal">
-            <span class="term-prompt">~/eduxperts $</span> docker push production
-          </div>
-          <h3 class="pl-title">TEST & DELIVERY</h3>
-          <p class="pl-desc">Tested and production-ready. No surprise bugs, no late deliveries.</p>
-        </div>
-      </div>
-
-      <div class="pipeline-item reveal">
-        <div class="pl-node">
-          <span class="pl-icon">5</span>
-        </div>
-        <div class="pl-content">
-          <div class="pl-terminal">
-            <span class="term-prompt">~/eduxperts $</span> systemctl status active
-          </div>
-          <h3 class="pl-title">SUPPORT & MAINTENANCE</h3>
-          <p class="pl-desc">We don't disappear. We keep your infrastructure alive for updates and new features.</p>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -595,8 +644,8 @@
          <div class="wd-content">
             <span class="wd-num">01</span>
             <div class="wd-terminal"><span class="term-prompt">~/eduxperts $</span> whoami</div>
-            <h3>We run our own products.</h3>
-            <p>We don't just develop software — we also ship our own products. This changes how we look at every project.</p>
+            <h3 data-i18n="why-1-title">We run our own products.</h3>
+            <p data-i18n="why-1-desc">We don't just develop software — we also ship our own products. This changes how we look at every project.</p>
          </div>
       </div>
 
@@ -605,8 +654,8 @@
          <div class="wd-content">
             <span class="wd-num">02</span>
             <div class="wd-terminal"><span class="term-prompt">~/eduxperts $</span> ask --why-first</div>
-            <h3>Problem first, solution second.</h3>
-            <p>We don't write code without asking the right question first. Sometimes the best solution involves less technology.</p>
+            <h3 data-i18n="why-2-title">Problem first, solution second.</h3>
+            <p data-i18n="why-2-desc">We don't write code without asking the right question first. Sometimes the best solution involves less technology.</p>
          </div>
       </div>
 
@@ -615,8 +664,8 @@
          <div class="wd-content">
             <span class="wd-num">03</span>
             <div class="wd-terminal"><span class="term-prompt">~/eduxperts $</span> no --middlemen</div>
-            <h3>Direct communication.</h3>
-            <p>You talk to the engineers building your product throughout the project. No middlemen, no filters.</p>
+            <h3 data-i18n="why-3-title">Direct communication.</h3>
+            <p data-i18n="why-3-desc">You talk to the engineers building your product throughout the project. No middlemen, no filters.</p>
          </div>
       </div>
     </div>
@@ -689,7 +738,6 @@
         </div>
         <div class="footer-col">
           <h4>Company</h4>
-          <a href="#nasil">Process</a>
           <a href="#iletisim">Contact</a>
           <a href="#">LinkedIn</a>
           <a href="#">GitHub</a>

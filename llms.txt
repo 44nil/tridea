@@ -1,0 +1,32 @@
+# EduXperts
+
+> EduXperts (EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.) is a software studio and EU-project consultancy based in Türkiye. We build web, mobile, and AI software, run our own products, and provide Erasmus+/EU-funding consulting and training.
+
+## Company
+
+- Website: https://eduxperts.com.tr/
+- What we do: custom web/mobile/AI software development, SaaS platforms, EdTech (LMS) solutions, EU funding & Erasmus+ project consulting.
+- Own products: [EduQR](https://eduqr.tr) — a digital menu system for restaurants, compliant with Turkish Trade Ministry regulations.
+- We are a partner organization on "StartupLab", an EU-funded Erasmus+ KA210-ADU project (Project Reference: 2025-1LT01-KA210-ADU-000355499, Oct 2025 – Mar 2027) alongside partners in Lithuania and France.
+
+## Pages
+
+- [Homepage](https://eduxperts.com.tr/): services, products, EU project, courses overview, FAQ.
+- [Courses](https://eduxperts.com.tr/courses.html): Business skills training and Erasmus+ KA1 courses for the education sector.
+
+## Services
+
+- Custom web, mobile, and AI/backend software development.
+- Enterprise-grade, multi-tenant SaaS platforms.
+- Learning Management Systems (LMS) and e-learning content.
+- EU funding research and Erasmus+/Horizon project consulting.
+
+## Courses
+
+Business Courses: Project Cycle Management, Time Management, Communication Skills, Entrepreneurship Education, Leadership and Team Building, Social Entrepreneurship.
+
+Erasmus+ Courses (KA1): Inclusive Education, ICT in the Classroom, Flipped Classroom, STEM to STEAM Education, Game-Based Learning, Developing Tolerance, CLIL Method, Sustainable Development.
+
+## Contact
+
+Contact form available at https://eduxperts.com.tr/#iletisim. We respond within 24 hours.

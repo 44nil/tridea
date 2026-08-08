@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Course Details — EduXperts</title>
+<meta name="description" content="Business and Erasmus+ training course details from EduXperts." />
+<link rel="canonical" href="https://eduxperts.com.tr/course-details.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="EduXperts" />
+<meta property="og:title" content="Course Details — EduXperts" />
+<meta property="og:description" content="Business and Erasmus+ training course details from EduXperts." />
+<meta property="og:url" content="https://eduxperts.com.tr/course-details.html" />
+<meta property="og:image" content="" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Course Details — EduXperts" />
+<meta name="twitter:description" content="Business and Erasmus+ training course details from EduXperts." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="alternate icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="logo">EDUXPERTS<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#hizmetler" data-i18n="nav-services">Services</a></li>
+    <li><a href="index.html#urunler" data-i18n="nav-products">Products</a></li>
+    <li><a href="courses.html" data-i18n="nav-courses">Courses</a></li>
+    <li><a href="index.html#iletisim" data-i18n="nav-contact">Contact</a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+  </div>
+  <a href="index.html#iletisim" class="nav-btn" data-i18n="nav-cta">Get a Quote →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#hizmetler" class="mob-link">Services</a>
+  <a href="index.html#urunler" class="mob-link">Products</a>
+  <a href="courses.html" class="mob-link">Courses</a>
+  <a href="index.html#iletisim" class="mob-link">Contact</a>
+  <a href="index.html#iletisim" class="mob-cta">Get a Quote →</a>
+</div>
+
+<!-- COURSE HERO -->
+<section class="cd-hero">
+  <div class="cd-hero-bg" id="cdHeroBg"></div>
+  <div class="cd-hero-content">
+    <a href="courses.html" class="cd-back">← All Courses</a>
+    <span class="cd-badge" id="cdBadge">Course</span>
+    <h1 id="cdTitle">Loading…</h1>
+    <p id="cdSubtitle"></p>
+  </div>
+</section>
+
+<!-- COURSE BODY -->
+<section class="cd-body">
+  <div class="cd-body-inner">
+    <div class="cd-main">
+      <div class="cd-tabs">
+        <button class="cd-tab-btn active" data-tab="desc">Description</button>
+        <button class="cd-tab-btn" data-tab="outcomes">Learning Outcomes</button>
+        <button class="cd-tab-btn" id="cdProgTabBtn" data-tab="programme">Programme</button>
+      </div>
+
+      <div class="cd-tab-content" data-tab-content="desc" id="cdDescContent"></div>
+
+      <div class="cd-tab-content" data-tab-content="outcomes" style="display:none">
+        <ul class="cd-list" id="cdOutcomesList"></ul>
+      </div>
+
+      <div class="cd-tab-content" data-tab-content="programme" style="display:none">
+        <ul class="cd-list" id="cdProgrammeList"></ul>
+      </div>
+    </div>
+
+    <div class="cd-sidebar" id="cdSidebar">
+      <div class="cd-sidebar-box">
+        <h3>Course Details</h3>
+        <div class="cd-sidebar-row"><span>Duration</span><strong id="cdDuration"></strong></div>
+        <div class="cd-sidebar-row"><span>Cost</span><strong id="cdCost"></strong></div>
+        <div class="cd-sidebar-row"><span>Language</span><strong id="cdLang"></strong></div>
+        <div class="cd-sidebar-row"><span>Location</span><strong id="cdLoc"></strong></div>
+        <a href="index.html#iletisim" class="btn-course full">Apply Now →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">EDUXPERTS<span>.</span></div>
+        <p data-i18n="footer-desc">Turning ideas into products, problems into solutions.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="https://eduqr.tr" target="_blank">EduQR</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="index.html#hizmetler">Web Development</a>
+          <a href="index.html#hizmetler">Mobile Apps</a>
+          <a href="index.html#hizmetler">Artificial Intelligence</a>
+          <a href="index.html#hizmetler">SaaS</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html#iletisim">Contact</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="f-legal">
+        <p data-i18n="footer-legal">EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.</p>
+        <p data-i18n="footer-copy">© 2026 EduXperts. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/course-details.js"></script>
+</body>
+</html>
