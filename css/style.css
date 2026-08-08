@@ -769,7 +769,7 @@ nav.scrolled {
 /* NETWORK MATRIX */
 .network-strict {
   background-color: var(--white);
-  padding: 140px 48px;
+  padding: 80px 48px 140px;
   position: relative;
   overflow: hidden;
 }
@@ -1046,6 +1046,35 @@ nav.scrolled {
   .intl-grid { grid-template-columns: 1fr; gap: 48px; }
 }
 
+/* SDG STRIP — official UN SDG colors, kept as-is (standardized symbols, not restyled) */
+.sdg-strip { max-width: 1400px; margin: 220px auto 0; position: relative; z-index: 2; }
+.sdg-intro { font-size: 15px; line-height: 1.7; color: var(--gray-500); font-weight: 300; max-width: 640px; margin-bottom: 32px; }
+.sdg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.sdg-item {
+  display: flex; flex-direction: column;
+  padding: 28px;
+  border: 1px solid var(--black);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.4s;
+}
+.sdg-item:hover { transform: translateY(-6px); border-color: var(--sdg-color); }
+
+.sdg-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; }
+.sdg-num { font-family: var(--font-display); font-size: 44px; font-weight: 800; color: var(--sdg-color); line-height: 0.9; }
+.sdg-title { font-family: var(--font-display); font-size: 15px; font-weight: 800; text-transform: uppercase; line-height: 1.25; letter-spacing: -0.01em; color: var(--sdg-color); padding-top: 4px; }
+
+.sdg-icon-wrap { display: flex; align-items: flex-end; height: 110px; }
+.sdg-icon { height: 100px; width: auto; max-width: 100%; object-fit: contain; }
+
+.sdg-4  { --sdg-color: #C5192D; }
+.sdg-5  { --sdg-color: #FF3A21; }
+.sdg-10 { --sdg-color: #DD1367; }
+.sdg-17 { --sdg-color: #19486A; }
+
+@media (max-width: 900px) {
+  .sdg-strip { margin-top: 120px; }
+  .sdg-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* WHY DARK BENTO */
 .why-dark { background: var(--black); padding: 140px 48px; position: relative; overflow: hidden; }
 .why-d-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
@@ -1055,31 +1084,36 @@ nav.scrolled {
 
 .why-d-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .wd-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 20px; padding: 48px;
-  position: relative; overflow: hidden;
+  background: transparent;
+  border: 1px solid var(--gray-700);
+  padding: 48px;
+  position: relative;
   display: flex; flex-direction: column; justify-content: flex-end;
   min-height: 360px;
-  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.4s;
+  transition: background 0.4s, border-color 0.4s;
 }
-.wd-card:hover { transform: translateY(-8px); border-color: rgba(255, 255, 255, 0.15); }
+.wd-card:hover { background: rgba(255,255,255,0.02); border-color: var(--gray-500); }
 .wd-wide { grid-column: 1 / -1; min-height: 300px; }
 
-.wd-glow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent 60%); pointer-events: none; transition: opacity 0.4s; }
-.wd-glow-blue { position: absolute; top: 0; right: 0; width: 100%; height: 100%; background: radial-gradient(circle at top right, rgba(130, 170, 255, 0.15), transparent 60%); pointer-events: none; transition: opacity 0.4s; }
-.wd-glow-purple { position: absolute; bottom: 0; right: 0; width: 100%; height: 100%; background: radial-gradient(circle at bottom right, rgba(199, 146, 234, 0.15), transparent 60%); pointer-events: none; transition: opacity 0.4s; }
-
-.wd-card:hover .wd-glow, .wd-card:hover .wd-glow-blue, .wd-card:hover .wd-glow-purple { opacity: 0.8; }
-
 .wd-content { position: relative; z-index: 2; }
-.wd-num { font-family: var(--font-mono); font-size: 14px; color: var(--white); margin-bottom: 24px; display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.1); border-radius: 100px; }
+.wd-num { font-family: var(--font-mono); font-size: 11px; color: var(--gray-500); letter-spacing: 0.1em; margin-bottom: 24px; display: block; }
+.wd-terminal {
+  font-family: var(--font-mono); font-size: 12px;
+  color: var(--gray-300); margin-bottom: 20px;
+  background: rgba(255,255,255,0.06);
+  padding: 8px 16px; border-radius: 6px;
+  display: inline-block;
+}
 .wd-card h3 { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--white); margin-bottom: 16px; letter-spacing: -0.01em; }
 .wd-card p { font-size: 15px; line-height: 1.7; color: var(--gray-300); font-weight: 300; max-width: 600px; }
 
 @media (max-width: 900px) {
   .why-d-grid { grid-template-columns: 1fr; }
   .wd-wide { grid-column: span 1; }
+}
+
+@media (max-width: 900px) {
+  .wd-item { grid-template-columns: 1fr; gap: 12px; }
 }/* TRIDEA BOT (TERMINAL CHAT) */
 .tridea-bot { background: var(--black); padding: 120px 48px; }
 .bot-inner { max-width: 900px; margin: 0 auto; }
