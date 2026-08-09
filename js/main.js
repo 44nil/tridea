@@ -108,7 +108,7 @@ const translations = {
     'footer-saas': 'SaaS',
     'footer-process': 'Süreç',
     'footer-contact': 'İletişim',
-    'footer-legal': 'EduXperts Eğitim Danışmanlık ve Yazılım A.Ş.',
+    'footer-legal': 'EduXperts Eğitim Teknoloji Danışmanlık Ticaret Limited Şirketi',
     'footer-copy': '© 2026 EduXperts. Tüm hakları saklıdır.',
   },
   en: {
@@ -217,7 +217,7 @@ const translations = {
     'footer-saas': 'SaaS',
     'footer-process': 'Process',
     'footer-contact': 'Contact',
-    'footer-legal': 'EduXperts Education Consulting and Software Inc.',
+    'footer-legal': 'EduXperts Education Technology Consulting Trade Ltd.',
     'footer-copy': '© 2026 EduXperts. All rights reserved.',
   }
 };
