@@ -1151,30 +1151,25 @@ nav.scrolled {
   .course-img-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 700px) {
-  .course-cards {
-    min-height: auto;
-    display: flex; flex-direction: row;
-    gap: 14px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 4px 24px 12px;
-    margin: 0 -24px;
-    scrollbar-width: none;
-  }
-  .course-cards::-webkit-scrollbar { display: none; }
+  /* Same fanned overlapping stack as desktop, just scaled down to fit a narrow viewport
+     instead of a swipe-to-see-next carousel — every card stays visible at once. */
+  .course-cards { min-height: 300px; margin-top: 32px; }
   .course-card {
-    position: relative; top: auto; left: auto;
-    flex: 0 0 auto;
-    width: 260px; box-sizing: border-box;
-    scroll-snap-align: start;
-    transform: rotate(calc(var(--i, 0) * 1.5deg - 1.5deg));
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    width: 220px;
+    padding: 24px 24px;
+    box-sizing: border-box;
+    transform: skewY(-6deg) translate(calc(var(--i, 0) * 42px), calc(var(--i, 0) * 30px));
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.35s;
   }
-  .course-card:hover { transform: rotate(calc(var(--i, 0) * 1.5deg - 1.5deg)); }
+  .course-card:hover {
+    transform: skewY(-6deg) translate(calc(var(--i, 0) * 42px), calc(var(--i, 0) * 30px));
+  }
   .course-card:active {
-    transform: rotate(calc(var(--i, 0) * 1.5deg - 1.5deg)) scale(0.96);
-    box-shadow: 0 6px 14px rgba(12,12,12,0.16);
+    z-index: 50;
+    transform: skewY(-6deg) translate(calc(var(--i, 0) * 42px), calc(var(--i, 0) * 30px)) scale(0.97);
+    box-shadow: 0 10px 20px rgba(12,12,12,0.16);
   }
+  .course-card-name { font-size: 19px; }
 }
 
 /* NEWS LIST PAGE */
