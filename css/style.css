@@ -1497,7 +1497,7 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
   font-size: clamp(70px, 13vw, 200px);
   line-height: 1; letter-spacing: -0.02em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255,255,255,0.07);
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.22);
   white-space: nowrap;
   pointer-events: none;
   z-index: 0;
