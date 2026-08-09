@@ -1036,10 +1036,10 @@ nav.scrolled {
      lower and leaves a peek of the previous card's edge showing above it */
   .why-d-grid { display: block; }
   .wd-stack-item { display: block; position: relative; min-height: 70vh; }
-  .wd-card { position: sticky; background: var(--black); }
-  .wd-stack-item:nth-child(1) .wd-card { top: 70px; z-index: 1; }
-  .wd-stack-item:nth-child(2) .wd-card { top: 100px; z-index: 2; }
-  .wd-stack-item:nth-child(3) .wd-card { top: 130px; z-index: 3; }
+  .wd-card { position: sticky; top: 70px; background: var(--black); }
+  .wd-stack-item:nth-child(1) .wd-card { z-index: 1; }
+  .wd-stack-item:nth-child(2) .wd-card { z-index: 2; }
+  .wd-stack-item:nth-child(3) .wd-card { z-index: 3; }
 }
 
 /* TRAINING & COURSES TEASER */
@@ -1798,7 +1798,7 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .scroll-item { min-height: 100vh; padding: 0; position: relative; }
     .scroll-item .strict-card {
       position: sticky;
-      top: calc(70px + var(--stack-i, 0) * 30px);
+      top: 70px;
       z-index: calc(var(--stack-i, 0) + 1);
       background: var(--black);
       opacity: 1 !important;
