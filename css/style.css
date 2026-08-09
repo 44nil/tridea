@@ -1461,9 +1461,9 @@ nav.scrolled {
 .form-group input:focus, .form-group textarea:focus { border-color: #3b82f6; background: rgba(59, 130, 246, 0.02); }
 
 /* FOOTER */
-footer { background: var(--black); border-top: 1px solid var(--gray-800); position: relative; overflow: hidden; }
-.footer-inner { padding: 64px 48px 32px; position: relative; }
-.footer-top { position: relative; z-index: 1; display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-800); margin-bottom: 32px; }
+footer { background: var(--black); border-top: 1px solid var(--gray-800); }
+.footer-inner { padding: 64px 48px 32px; }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-800); margin-bottom: 32px; }
 .footer-brand .logo { color: var(--white); display: block; margin-bottom: 16px; }
 .footer-brand p { font-size: 13px; line-height: 1.7; color: var(--gray-500); font-weight: 300; }
 .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
@@ -1480,7 +1480,6 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
 }
 .footer-col a:hover { color: #3b82f6; }
 .footer-bottom {
-  position: relative; z-index: 1;
   display: flex; justify-content: space-between; align-items: flex-end;
   border-top: 1px solid rgba(255,255,255,0.05); padding-top: 32px; margin-top: 16px;
 }
@@ -1488,19 +1487,6 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
 .footer-bottom p {
   font-family: var(--font-body); font-size: 13px;
   color: var(--gray-300); font-weight: 300;
-}
-
-.footer-watermark {
-  position: absolute; left: 50%; bottom: -0.14em;
-  transform: translateX(-50%);
-  font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(70px, 13vw, 200px);
-  line-height: 1; letter-spacing: -0.02em;
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255,255,255,0.22);
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* REVEAL ANIMATIONS */
