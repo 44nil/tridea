@@ -9,6 +9,7 @@ const translations = {
     'nav-news': 'Haberler',
     'nav-contact': 'İletişim',
     'nav-cta': 'Teklif Al →',
+    'hero-eyebrow': 'Yazılım Stüdyosu · Türkiye',
     'hero-title': 'Karmaşık algoritmaları<br>ele alıyor,<br><em>çözümlere</em> dönüştürüyoruz.',
     'hero-sub': 'Yazılım üretip yayına alıyoruz — bazen müşteri için, bazen kendimiz için. AB destekli projeleri kazanmaktan hayata geçirmeye kadar yanınızdayız.',
     'hero-btn-primary': 'Projenizi Konuşalım',
@@ -118,6 +119,7 @@ const translations = {
     'nav-news': 'News',
     'nav-contact': 'Contact',
     'nav-cta': 'Get a Quote →',
+    'hero-eyebrow': 'Software Studio · Türkiye',
     'hero-title': 'We take complex algorithms,<br>and architect them<br>into <em>solutions.</em>',
     'hero-sub': 'We build software that ships — for clients, and for ourselves. We also help organizations secure and deliver EU-funded projects.',
     'hero-btn-primary': 'Let\'s Talk',
@@ -444,6 +446,21 @@ const revealObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1 });
 reveals.forEach(el => revealObserver.observe(el));
+
+// COURSE CARD REVEAL (opacity-only — keeps the skew/rotate transform intact)
+// Observes the row, not individual cards: cards sitting off-screen inside the
+// horizontal scroller would otherwise never intersect the viewport and stay invisible.
+const courseRevealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.course-reveal').forEach((el, i) => {
+        setTimeout(() => el.classList.add('cr-visible'), i * 80);
+      });
+      courseRevealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.course-cards').forEach(el => courseRevealObserver.observe(el));
 
 // FORM SUBMIT
 const form = document.getElementById('contactForm');

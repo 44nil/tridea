@@ -946,6 +946,10 @@ nav.scrolled {
 
 @media (max-width: 900px) {
   .intl-grid { grid-template-columns: 1fr; gap: 48px; }
+  .intl-visual { order: -2; }
+  .intl-col { order: -1; }
+  .sl-folder-wrap { order: 0; }
+  .sl-folder-stage { transform: scale(0.85); transform-origin: top center; margin-bottom: -40px; }
 }
 
 /* SDG STRIP — official UN SDG colors, kept as-is (standardized symbols, not restyled) */
@@ -976,6 +980,10 @@ nav.scrolled {
 @media (max-width: 900px) {
   .sdg-strip { margin-top: 120px; }
   .sdg-grid { grid-template-columns: repeat(2, 1fr); }
+  .sdg-item { padding: 20px; }
+  .sdg-top { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .sdg-num { font-size: 30px; }
+  .sdg-title { font-size: 12.5px; padding-top: 0; }
 }
 
 /* WHY DARK BENTO */
@@ -1015,8 +1023,12 @@ nav.scrolled {
   .wd-wide { grid-column: span 1; }
 }
 
-@media (max-width: 900px) {
-  .wd-item { grid-template-columns: 1fr; gap: 12px; }
+@media (max-width: 768px) {
+  .why-dark { padding: 80px 24px; }
+  .why-d-header { margin-bottom: 40px; }
+  .wd-card { padding: 32px 28px; min-height: auto; }
+  .wd-wide { min-height: 220px; }
+  .wd-card h3 { font-size: 22px; }
 }
 
 /* TRAINING & COURSES TEASER */
@@ -1043,7 +1055,7 @@ nav.scrolled {
 .courses-teaser-grid-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
 .courses-teaser-grid-cols .course-cards { margin-top: 120px; }
 .courses-teaser-cta { margin-top: -30px; }
-.courses-teaser-cta .btn-course {
+.btn-course {
   background: var(--black); color: var(--white);
   border: 1px solid var(--black);
   padding: 16px 32px;
@@ -1051,7 +1063,7 @@ nav.scrolled {
   text-decoration: none; display: inline-block;
   transition: background 0.2s, color 0.2s;
 }
-.courses-teaser-cta .btn-course:hover { background: var(--white); color: var(--black); }
+.btn-course:hover { background: var(--white); color: var(--black); }
 
 @media (max-width: 900px) {
   .courses-teaser-grid-cols { grid-template-columns: 1fr; gap: 56px; }
@@ -1244,7 +1256,9 @@ nav.scrolled {
   width: max-content;
   animation: newsMarquee 70s linear infinite;
 }
-.news-marquee-track:hover .news-marquee-inner { animation-play-state: paused; }
+@media (hover: hover) {
+  .news-marquee-track:hover .news-marquee-inner { animation-play-state: paused; }
+}
 @keyframes newsMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 .news-teaser-card {
@@ -1397,9 +1411,15 @@ nav.scrolled {
 .bot-input-area button svg { width: 18px; height: 18px; }
 
 @media (max-width: 768px) {
+  .tridea-bot { padding: 80px 20px; }
   .bot-window { height: auto; }
-  .bot-chat-area { flex: none; overflow: visible; min-height: 140px; }
+  .bot-topbar { padding: 12px 16px; }
+  .bot-chat-area { flex: none; overflow: visible; min-height: 140px; padding: 24px 16px; }
   .chat-msg { max-width: 90%; }
+  .msg-bubble { padding: 14px 16px; }
+  .bot-quick-replies { padding: 0 16px 16px; }
+  .qr-btn { padding: 7px 14px; font-size: 12px; }
+  .bot-input-area { padding: 12px 16px; }
 }
 
 /* CONTACT */
@@ -1503,6 +1523,10 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+/* Opacity-only entrance for elements whose resting transform (skew/rotate) must not be touched */
+.course-reveal { opacity: 0; transition: opacity 0.5s ease; }
+.course-reveal.cr-visible { opacity: 1; }
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .product-block, .product-block.reverse { grid-template-columns: 1fr; }
@@ -1519,6 +1543,8 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
   .hero-content { grid-column: 1; margin-top: 0; min-width: 0; }
   .hero-visual { grid-column: 1; display: block; margin-top: 0; min-width: 0; }
   .hero-title { font-size: clamp(30px, 8vw, 52px); }
+  .hero-glow { width: 340px; height: 340px; top: -12%; right: -25%; }
+  .hero-badge { margin-bottom: 20px; }
   .code-window { max-width: 100%; }
   .code-body { overflow-x: auto; max-width: 100%; }
   .code-line { font-size: 12px; }
@@ -1748,6 +1774,8 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     font-weight: 300;
 }
 
+.mobile-chapter-break { display: none; }
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .scroll-container { flex-direction: column; padding: 0 24px; }
@@ -1757,6 +1785,26 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .scrolling-side { width: 100%; padding-left: 0; }
     .scroll-item { min-height: auto; padding: 40px 0; }
     .eng-features-grid { grid-template-columns: 1fr; }
+
+    .mobile-chapter-break {
+      display: block;
+      padding: 32px 0 8px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-top: 8px;
+    }
+    .mobile-chapter-break .tag {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--gray-500); margin-bottom: 12px;
+      display: inline-block;
+    }
+    .mobile-chapter-break h3 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 6vw, 36px);
+      font-weight: 700; line-height: 1.05;
+      letter-spacing: -0.02em; color: var(--white);
+    }
+    .mobile-chapter-break h3 em { color: var(--gray-500); font-style: normal; }
 }
 
 /* ==========================================================================
@@ -1917,6 +1965,9 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .p-card { border-right: none !important; border-bottom: 1px solid var(--gray-700) !important; min-height: 450px; }
     .p-card:last-child { border-bottom: none !important; }
     .p-card-visual img { max-height: 200px; }
+    .onb-phone .phone-frame-overlay { max-height: none; }
+    .onb-phone { transform: scale(0.625); transform-origin: center; }
+    .p-card-visual:has(.onb-phone) { flex-basis: 220px; margin: 20px 0; }
 }
 /* STARTUPLAB LIGHTBOX — full-viewport blurred overlay, click folder to open */
 .sl-lightbox {
