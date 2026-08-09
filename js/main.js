@@ -482,6 +482,23 @@ if (slFolderWrap && slLightbox) {
   });
 }
 
+// NEWS PHOTO LIGHTBOX — click any news photo to enlarge
+const newsLightbox = document.getElementById('newsLightbox');
+const newsLightboxImg = document.getElementById('newsLightboxImg');
+if (newsLightbox && newsLightboxImg) {
+  document.querySelectorAll('.news-item-media img, .news-collage img').forEach(img => {
+    img.addEventListener('click', () => {
+      newsLightboxImg.src = img.src;
+      newsLightboxImg.alt = img.alt;
+      newsLightbox.classList.add('open');
+    });
+  });
+  newsLightbox.addEventListener('click', () => newsLightbox.classList.remove('open'));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') newsLightbox.classList.remove('open');
+  });
+}
+
 // SMOOTH SCROLL FOR NAV LINKS
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {

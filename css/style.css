@@ -1174,6 +1174,35 @@ nav.scrolled {
 .news-item p { font-size: 15px; line-height: 1.7; color: var(--gray-500); font-weight: 300; }
 .news-item-link { display: inline-block; margin-top: 12px; font-family: var(--font-mono); font-size: 13px; color: var(--black); text-decoration: underline; }
 
+/* Multi-photo collage (replaces .news-item-media when an article has 3-4 real photos) */
+.news-collage {
+  position: relative; border: 1px solid var(--black); overflow: hidden;
+  aspect-ratio: 4 / 3; display: grid; gap: 2px; background: var(--black);
+}
+.news-collage img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; transition: transform 0.3s ease, opacity 0.3s ease; }
+.news-collage img:hover { opacity: 0.85; }
+.news-collage-3 { grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; }
+.news-collage-3 img:first-child { grid-row: 1 / 3; }
+.news-collage-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.news-item-featured .news-collage { aspect-ratio: 21 / 9; }
+.news-item-media img { cursor: zoom-in; }
+
+/* Lightbox — click any news photo to enlarge */
+.news-lightbox {
+  position: fixed; inset: 0; z-index: 3000;
+  background: rgba(12,12,12,0.94);
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.news-lightbox.open { opacity: 1; pointer-events: auto; }
+.news-lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 20px 60px rgba(0,0,0,0.5); cursor: zoom-out; }
+
+@media (max-width: 700px) {
+  .news-collage-3, .news-collage-4 { aspect-ratio: 4 / 3; }
+}
+
 /* Featured (first / latest) news item */
 .news-item-featured {
   grid-template-columns: 1fr;
