@@ -1799,8 +1799,6 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .scroll-item { display: block; min-height: 100vh; padding: 0; }
     .scroll-item .strict-card {
       background: var(--black);
-      opacity: 1 !important;
-      transform: none !important;
     }
 
     .mobile-chapter-break {

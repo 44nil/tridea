@@ -468,12 +468,35 @@ document.querySelectorAll('.course-cards').forEach(el => courseRevealObserver.ob
 // make one card's release exactly meet the next one's pin point without either
 // a dead gap or wrappers overlapping into each other's space. Driving it with
 // scroll math instead: whichever .scroll-item/.wd-stack-item's top has most
-// recently crossed the pin line owns the fixed card; every other card is
-// hidden outright — a "waiting" card left visible in normal flow can already
-// overlap the pinned one, since its wrapper is taller than its own content.
+// recently crossed the pin line owns the fixed card, and it visibly slides up
+// from below into place — the outgoing card stays put until that finishes, so
+// it reads as "a new card arrives and covers the old one", not a content swap
+// inside a box that never moved.
 function setupStackScroll(itemSelector, cardSelector, topOffset) {
   const items = Array.from(document.querySelectorAll(itemSelector));
   if (!items.length) return;
+  let activeIndex = -1;
+  let hideTimer = null;
+
+  function pin(card, rect) {
+    card.style.position = 'fixed';
+    card.style.top = topOffset + 'px';
+    card.style.left = rect.left + 'px';
+    card.style.width = rect.width + 'px';
+    card.style.height = 'auto';
+    card.style.zIndex = '50';
+    card.style.opacity = '1';
+    card.style.visibility = 'visible';
+  }
+
+  function release(card) {
+    card.style.position = '';
+    card.style.visibility = 'hidden';
+    card.style.transform = '';
+    card.style.transition = '';
+    card.style.zIndex = '';
+    card.style.opacity = '';
+  }
 
   function update() {
     if (!window.matchMedia('(max-width: 900px)').matches) {
@@ -481,34 +504,50 @@ function setupStackScroll(itemSelector, cardSelector, topOffset) {
         const card = item.querySelector(cardSelector);
         if (card) card.removeAttribute('style');
       });
+      activeIndex = -1;
       return;
     }
     const rects = items.map(item => item.getBoundingClientRect());
-    let activeIndex = -1;
+    let newIndex = -1;
     rects.forEach((rect, i) => {
-      if (rect.top <= topOffset) activeIndex = i;
+      if (rect.top <= topOffset) newIndex = i;
     });
     // release the last card once its own wrapper has fully scrolled past the pin line
-    if (activeIndex === items.length - 1 && rects[activeIndex].bottom <= topOffset) {
-      activeIndex = -1;
+    if (newIndex === items.length - 1 && rects[newIndex].bottom <= topOffset) {
+      newIndex = -1;
     }
+
+    if (newIndex === activeIndex) {
+      // nothing changed — just keep the pinned card's box synced (resize, reflow)
+      if (activeIndex !== -1) pin(items[activeIndex].querySelector(cardSelector), rects[activeIndex]);
+      return;
+    }
+
+    const prevIndex = activeIndex;
+    activeIndex = newIndex;
+    clearTimeout(hideTimer);
+
     items.forEach((item, i) => {
-      const card = item.querySelector(cardSelector);
-      if (!card) return;
-      if (i === activeIndex) {
-        const rect = rects[i];
-        card.style.position = 'fixed';
-        card.style.top = topOffset + 'px';
-        card.style.left = rect.left + 'px';
-        card.style.width = rect.width + 'px';
-        card.style.height = 'auto';
-        card.style.zIndex = '50';
-        card.style.visibility = 'visible';
-      } else {
-        card.style.position = '';
-        card.style.visibility = 'hidden';
-      }
+      if (i === activeIndex || i === prevIndex) return;
+      release(item.querySelector(cardSelector));
     });
+
+    if (activeIndex !== -1) {
+      const card = items[activeIndex].querySelector(cardSelector);
+      pin(card, rects[activeIndex]);
+      // CSS transitions triggered via a manual transition:none + reflow + rAF proved
+      // unreliable here (timing-dependent, silently no-ops in some runs) — the Web
+      // Animations API drives the same slide-up reliably with explicit keyframes.
+      card.animate(
+        [{ transform: 'translateY(100vh)' }, { transform: 'translateY(0)' }],
+        { duration: 500, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'forwards' }
+      );
+    }
+
+    if (prevIndex !== -1 && prevIndex !== activeIndex) {
+      const prevCard = items[prevIndex].querySelector(cardSelector);
+      hideTimer = setTimeout(() => release(prevCard), 520);
+    }
   }
 
   let ticking = false;
