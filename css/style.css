@@ -1797,9 +1797,11 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .eng-features-grid { grid-template-columns: 1fr; }
 
     /* Sticky stacking cards: each card pins at a slightly deeper offset than the last,
-       so the next one settles a little lower and peeks over the previous card's edge */
+       so the next one settles a little lower and peeks over the previous card's edge.
+       Scoped to .scroll-item .strict-card only — .strict-card is reused by the
+       unrelated Products section (.p-card) and must not be affected here. */
     .scroll-item { min-height: 420px; padding: 0; position: relative; }
-    .strict-card {
+    .scroll-item .strict-card {
       position: sticky;
       top: calc(70px + var(--stack-i, 0) * 40px);
       z-index: calc(var(--stack-i, 0) + 1);
