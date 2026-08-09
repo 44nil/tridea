@@ -994,7 +994,6 @@ nav.scrolled {
 .why-d-header h2 span { color: var(--gray-500); font-weight: 400; font-style: italic; }
 
 .why-d-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.wd-stack-item { display: contents; }
 .wd-card {
   background: transparent;
   border: 1px solid var(--gray-700);
@@ -1025,19 +1024,11 @@ nav.scrolled {
 }
 
 @media (max-width: 768px) {
-  .why-dark { padding: 80px 24px; overflow: visible; }
+  .why-dark { padding: 80px 24px; }
   .why-d-header { margin-bottom: 40px; }
   .wd-card { padding: 32px 28px; min-height: auto; }
   .wd-wide { min-height: 220px; }
   .wd-card h3 { font-size: 22px; }
-
-  /* Stacking cards: positioning (fixed while pinned) is driven entirely by JS
-     (setupStackScroll in main.js) — each .wd-stack-item's own height defines
-     its scroll "zone". Must be a real box here (not display:contents) so JS
-     can read a meaningful getBoundingClientRect() for it. */
-  .why-d-grid { display: block; }
-  .wd-stack-item { display: block; min-height: 80vh; }
-  .wd-card { background: var(--black); }
 }
 
 /* TRAINING & COURSES TEASER */
@@ -1789,17 +1780,7 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .scrolling-side { width: 100%; padding-left: 0; }
     .eng-features-grid { grid-template-columns: 1fr; }
 
-    /* Stacking cards: positioning (fixed while pinned) is driven entirely by JS
-       (setupStackScroll in main.js) — each .scroll-item's own height defines its
-       scroll "zone", and the base rule's display:flex + justify-content:center
-       must be overridden to block or the card centers instead of sitting at the
-       zone's top edge, which the JS math assumes.
-       Scoped to .scroll-item .strict-card only — .strict-card is reused by the
-       unrelated Products section (.p-card) and must not be affected here. */
-    .scroll-item { display: block; min-height: 100vh; padding: 0; }
-    .scroll-item .strict-card {
-      background: var(--black);
-    }
+    .scroll-item { min-height: auto; padding: 40px 0; }
 
     .mobile-chapter-break {
       display: block;
