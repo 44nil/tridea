@@ -1035,11 +1035,11 @@ nav.scrolled {
      the nav at a slightly deeper offset than the last, so each new card settles a little
      lower and leaves a peek of the previous card's edge showing above it */
   .why-d-grid { display: block; }
-  .wd-stack-item { display: block; position: relative; min-height: 420px; }
+  .wd-stack-item { display: block; position: relative; min-height: 70vh; }
   .wd-card { position: sticky; background: var(--black); }
   .wd-stack-item:nth-child(1) .wd-card { top: 70px; z-index: 1; }
-  .wd-stack-item:nth-child(2) .wd-card { top: 110px; z-index: 2; }
-  .wd-stack-item:nth-child(3) .wd-card { top: 150px; z-index: 3; }
+  .wd-stack-item:nth-child(2) .wd-card { top: 100px; z-index: 2; }
+  .wd-stack-item:nth-child(3) .wd-card { top: 130px; z-index: 3; }
 }
 
 /* TRAINING & COURSES TEASER */
@@ -1800,10 +1800,10 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
        so the next one settles a little lower and peeks over the previous card's edge.
        Scoped to .scroll-item .strict-card only — .strict-card is reused by the
        unrelated Products section (.p-card) and must not be affected here. */
-    .scroll-item { min-height: 420px; padding: 0; position: relative; }
+    .scroll-item { min-height: 100vh; padding: 0; position: relative; }
     .scroll-item .strict-card {
       position: sticky;
-      top: calc(70px + var(--stack-i, 0) * 40px);
+      top: calc(70px + var(--stack-i, 0) * 30px);
       z-index: calc(var(--stack-i, 0) + 1);
       background: var(--black);
       opacity: 1 !important;
