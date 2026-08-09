@@ -1025,20 +1025,21 @@ nav.scrolled {
 }
 
 @media (max-width: 768px) {
-  .why-dark { padding: 80px 24px; }
+  .why-dark { padding: 80px 24px; overflow: visible; }
   .why-d-header { margin-bottom: 40px; }
   .wd-card { padding: 32px 28px; min-height: auto; }
   .wd-wide { min-height: 220px; }
   .wd-card h3 { font-size: 22px; }
 
   /* Sticky stacking cards: each wrapper gives scroll runway, the card inside pins below
-     the nav then gets covered by the next card as the user keeps scrolling */
+     the nav at a slightly deeper offset than the last, so each new card settles a little
+     lower and leaves a peek of the previous card's edge showing above it */
   .why-d-grid { display: block; }
   .wd-stack-item { display: block; position: relative; min-height: 420px; }
-  .wd-card { position: sticky; top: 70px; background: var(--black); }
-  .wd-stack-item:nth-child(1) .wd-card { z-index: 1; }
-  .wd-stack-item:nth-child(2) .wd-card { z-index: 2; }
-  .wd-stack-item:nth-child(3) .wd-card { z-index: 3; }
+  .wd-card { position: sticky; background: var(--black); }
+  .wd-stack-item:nth-child(1) .wd-card { top: 70px; z-index: 1; }
+  .wd-stack-item:nth-child(2) .wd-card { top: 110px; z-index: 2; }
+  .wd-stack-item:nth-child(3) .wd-card { top: 150px; z-index: 3; }
 }
 
 /* TRAINING & COURSES TEASER */
@@ -1793,8 +1794,19 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .sticky-content { position: static; opacity: 1; visibility: visible; transform: none; display: none; }
     .sticky-content.active { display: block; }
     .scrolling-side { width: 100%; padding-left: 0; }
-    .scroll-item { min-height: auto; padding: 40px 0; }
     .eng-features-grid { grid-template-columns: 1fr; }
+
+    /* Sticky stacking cards: each card pins at a slightly deeper offset than the last,
+       so the next one settles a little lower and peeks over the previous card's edge */
+    .scroll-item { min-height: 420px; padding: 0; position: relative; }
+    .strict-card {
+      position: sticky;
+      top: calc(70px + var(--stack-i, 0) * 40px);
+      z-index: calc(var(--stack-i, 0) + 1);
+      background: var(--black);
+      opacity: 1 !important;
+      transform: none !important;
+    }
 
     .mobile-chapter-break {
       display: block;
