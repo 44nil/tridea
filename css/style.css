@@ -1031,17 +1031,13 @@ nav.scrolled {
   .wd-wide { min-height: 220px; }
   .wd-card h3 { font-size: 22px; }
 
-  /* Sticky stacking cards: .wd-stack-item's own extra height (beyond the card's
-     natural content height) is what the card gets to stay pinned for. Needs to be
-     tall enough that the pinned "dwell" time clearly outweighs the plain-scroll
-     handoff between one card unpinning and the next reaching its own pin point,
-     or the effect reads as "barely sticks" instead of "cards stack." */
+  /* Stacking cards: positioning (fixed while pinned) is driven entirely by JS
+     (setupStackScroll in main.js) — each .wd-stack-item's own height defines
+     its scroll "zone". Must be a real box here (not display:contents) so JS
+     can read a meaningful getBoundingClientRect() for it. */
   .why-d-grid { display: block; }
-  .wd-stack-item { display: block; min-height: 100vh; }
-  .wd-card { position: sticky; top: 70px; background: var(--black); }
-  .wd-stack-item:nth-child(1) .wd-card { z-index: 1; }
-  .wd-stack-item:nth-child(2) .wd-card { z-index: 2; }
-  .wd-stack-item:nth-child(3) .wd-card { z-index: 3; }
+  .wd-stack-item { display: block; min-height: 80vh; }
+  .wd-card { background: var(--black); }
 }
 
 /* TRAINING & COURSES TEASER */
@@ -1793,17 +1789,15 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .scrolling-side { width: 100%; padding-left: 0; }
     .eng-features-grid { grid-template-columns: 1fr; }
 
-    /* Sticky stacking cards: .scroll-item's own extra height (beyond the card's
-       natural content height) is what the card gets to stay pinned for — the base
-       rule's display:flex + justify-content:center must be overridden to block/
-       flex-start or the card centers instead of anchoring to the sticky offset.
+    /* Stacking cards: positioning (fixed while pinned) is driven entirely by JS
+       (setupStackScroll in main.js) — each .scroll-item's own height defines its
+       scroll "zone", and the base rule's display:flex + justify-content:center
+       must be overridden to block or the card centers instead of sitting at the
+       zone's top edge, which the JS math assumes.
        Scoped to .scroll-item .strict-card only — .strict-card is reused by the
        unrelated Products section (.p-card) and must not be affected here. */
-    .scroll-item { display: block; min-height: 200vh; padding: 0; }
+    .scroll-item { display: block; min-height: 100vh; padding: 0; }
     .scroll-item .strict-card {
-      position: sticky;
-      top: 70px;
-      z-index: calc(var(--stack-i, 0) + 1);
       background: var(--black);
       opacity: 1 !important;
       transform: none !important;

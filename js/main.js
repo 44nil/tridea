@@ -462,6 +462,68 @@ const courseRevealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 document.querySelectorAll('.course-cards').forEach(el => courseRevealObserver.observe(el));
 
+// MOBILE STICKY STACK (#hizmetler + Why EduXperts)
+// position:sticky can't give a clean, gap-free handoff for content this tall —
+// its containing block is always the immediate wrapper, so there's no way to
+// make one card's release exactly meet the next one's pin point without either
+// a dead gap or wrappers overlapping into each other's space. Driving it with
+// scroll math instead: whichever .scroll-item/.wd-stack-item's top has most
+// recently crossed the pin line owns the fixed card; every other card is
+// hidden outright — a "waiting" card left visible in normal flow can already
+// overlap the pinned one, since its wrapper is taller than its own content.
+function setupStackScroll(itemSelector, cardSelector, topOffset) {
+  const items = Array.from(document.querySelectorAll(itemSelector));
+  if (!items.length) return;
+
+  function update() {
+    if (!window.matchMedia('(max-width: 900px)').matches) {
+      items.forEach(item => {
+        const card = item.querySelector(cardSelector);
+        if (card) card.removeAttribute('style');
+      });
+      return;
+    }
+    const rects = items.map(item => item.getBoundingClientRect());
+    let activeIndex = -1;
+    rects.forEach((rect, i) => {
+      if (rect.top <= topOffset) activeIndex = i;
+    });
+    // release the last card once its own wrapper has fully scrolled past the pin line
+    if (activeIndex === items.length - 1 && rects[activeIndex].bottom <= topOffset) {
+      activeIndex = -1;
+    }
+    items.forEach((item, i) => {
+      const card = item.querySelector(cardSelector);
+      if (!card) return;
+      if (i === activeIndex) {
+        const rect = rects[i];
+        card.style.position = 'fixed';
+        card.style.top = topOffset + 'px';
+        card.style.left = rect.left + 'px';
+        card.style.width = rect.width + 'px';
+        card.style.height = 'auto';
+        card.style.zIndex = '50';
+        card.style.visibility = 'visible';
+      } else {
+        card.style.position = '';
+        card.style.visibility = 'hidden';
+      }
+    });
+  }
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => { update(); ticking = false; });
+    }
+  }, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+}
+setupStackScroll('.scroll-item', '.strict-card', 70);
+setupStackScroll('.wd-stack-item', '.wd-card', 70);
+
 // FORM SUBMIT
 const form = document.getElementById('contactForm');
 if (form) {
