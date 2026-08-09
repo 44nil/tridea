@@ -1031,11 +1031,13 @@ nav.scrolled {
   .wd-wide { min-height: 220px; }
   .wd-card h3 { font-size: 22px; }
 
-  /* Sticky stacking cards: each wrapper gives scroll runway, the card inside pins below
-     the nav at a slightly deeper offset than the last, so each new card settles a little
-     lower and leaves a peek of the previous card's edge showing above it */
+  /* Sticky stacking cards: .wd-stack-item's own extra height (beyond the card's
+     natural content height) is what the card gets to stay pinned for. Needs to be
+     tall enough that the pinned "dwell" time clearly outweighs the plain-scroll
+     handoff between one card unpinning and the next reaching its own pin point,
+     or the effect reads as "barely sticks" instead of "cards stack." */
   .why-d-grid { display: block; }
-  .wd-stack-item { display: block; position: relative; min-height: 70vh; }
+  .wd-stack-item { display: block; min-height: 100vh; }
   .wd-card { position: sticky; top: 70px; background: var(--black); }
   .wd-stack-item:nth-child(1) .wd-card { z-index: 1; }
   .wd-stack-item:nth-child(2) .wd-card { z-index: 2; }
@@ -1791,11 +1793,13 @@ footer { background: var(--black); border-top: 1px solid var(--gray-800); positi
     .scrolling-side { width: 100%; padding-left: 0; }
     .eng-features-grid { grid-template-columns: 1fr; }
 
-    /* Sticky stacking cards: each card pins at a slightly deeper offset than the last,
-       so the next one settles a little lower and peeks over the previous card's edge.
+    /* Sticky stacking cards: .scroll-item's own extra height (beyond the card's
+       natural content height) is what the card gets to stay pinned for — the base
+       rule's display:flex + justify-content:center must be overridden to block/
+       flex-start or the card centers instead of anchoring to the sticky offset.
        Scoped to .scroll-item .strict-card only — .strict-card is reused by the
        unrelated Products section (.p-card) and must not be affected here. */
-    .scroll-item { min-height: 100vh; padding: 0; position: relative; }
+    .scroll-item { display: block; min-height: 200vh; padding: 0; }
     .scroll-item .strict-card {
       position: sticky;
       top: 70px;
