@@ -994,6 +994,7 @@ nav.scrolled {
 .why-d-header h2 span { color: var(--gray-500); font-weight: 400; font-style: italic; }
 
 .why-d-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.wd-stack-item { display: contents; }
 .wd-card {
   background: transparent;
   border: 1px solid var(--gray-700);
@@ -1029,6 +1030,15 @@ nav.scrolled {
   .wd-card { padding: 32px 28px; min-height: auto; }
   .wd-wide { min-height: 220px; }
   .wd-card h3 { font-size: 22px; }
+
+  /* Sticky stacking cards: each wrapper gives scroll runway, the card inside pins below
+     the nav then gets covered by the next card as the user keeps scrolling */
+  .why-d-grid { display: block; }
+  .wd-stack-item { display: block; position: relative; min-height: 420px; }
+  .wd-card { position: sticky; top: 70px; background: var(--black); }
+  .wd-stack-item:nth-child(1) .wd-card { z-index: 1; }
+  .wd-stack-item:nth-child(2) .wd-card { z-index: 2; }
+  .wd-stack-item:nth-child(3) .wd-card { z-index: 3; }
 }
 
 /* TRAINING & COURSES TEASER */
