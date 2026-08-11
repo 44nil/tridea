@@ -11,7 +11,7 @@ const translations = {
     'nav-cta': 'Teklif Al →',
     'hero-eyebrow': 'Yazılım Stüdyosu · Türkiye',
     'hero-title': 'Karmaşık algoritmaları<br>ele alıyor,<br><em>çözümlere</em> dönüştürüyoruz.',
-    'hero-sub': 'Yazılım üretip yayına alıyoruz — bazen müşteri için, bazen kendimiz için. AB destekli projelerin hem kazanılmasında hem hayata geçirilmesinde yanınızdayız.',
+    'hero-sub': 'Yazılım üretip yayına alıyoruz — bazen müşteri için, bazen kendimiz için. AB destekli projelerinizin başvurusundan hayata geçirilmesine kadar yanınızdayız.',
     'hero-btn-primary': 'Projenizi Konuşalım',
     'hero-btn-secondary': 'Ürünlerimizi Gör ↓',
     'svc-tag-1': '01. Studio',
